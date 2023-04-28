@@ -35,6 +35,49 @@ const Demo = () => {
     },
   });
 
+//   function isValidPhoneNumber(phoneNumber) {
+//     const phoneRegex = /^\d{10}$/;
+//     return phoneRegex.test(phoneNumber);
+//   }
+
+//   const [phoneNumber, setPhoneNumber] = useState('');
+//   const [password, setPassword] = useState('');
+
+//   const handleSubmit = (event) => {
+//     event.preventDefault();
+//     if (isValidPhoneNumber(phoneNumber)) {
+//       // Do something with the form data, such as submitting it to a server
+//     } else {
+//       alert('Please enter a valid phone number');
+//     }
+//   };
+
+//   return (
+//     <form onSubmit={handleSubmit}>
+//       <label>
+//         Phone number:
+//         <input
+//           type="tel"
+//           value={phoneNumber}
+//           onChange={(event) => setPhoneNumber(event.target.value)}
+//           required
+//         />
+//       </label>
+//       <label>
+//         Password:
+//         <input
+//           type="password"
+//           value={password}
+//           onChange={(event) => setPassword(event.target.value)}
+//           minLength={7}
+//           required
+//         />
+//       </label>
+//       <button type="submit">Submit</button>
+//     </form>
+//   );
+// }
+
   return (
     <form onSubmit={formik.handleSubmit}>
       <div>
