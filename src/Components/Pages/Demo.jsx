@@ -39,45 +39,18 @@ const Demo = () => {
     <form onSubmit={formik.handleSubmit}>
       <div>
         <label htmlFor="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          onChange={formik.handleChange}
-          onBlur={formik.handleBlur}
-          value={formik.values.email}
-        />
-        {formik.touched.email && formik.errors.email ? (
-          <div>{formik.errors.email}</div>
-        ) : null}
+        <input type="email" id="email" name="email" onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.email} />
+        {formik.touched.email && formik.errors.email ? (<div>{formik.errors.email}</div>) : null}
       </div>
       <div>
         <label htmlFor="password">Password</label>
-        <input
-          type="password"
-          id="password"
-          name="password"
-          onChange={formik.handleChange}
-          onBlur={formik.handleBlur}
-          value={formik.values.password}
-        />
-        {formik.touched.password && formik.errors.password ? (
-          <div>{formik.errors.password}</div>
-        ) : null}
+        <input type="password" id="password" name="password" onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.password} />
+        {formik.touched.password && formik.errors.password ? (<div>{formik.errors.password}</div>) : null}
       </div>
       <div>
         <label htmlFor="mobile">Mobile</label>
-        <input
-          type="text"
-          id="mobile"
-          name="mobile"
-          onChange={formik.handleChange}
-          onBlur={formik.handleBlur}
-          value={formik.values.mobile}
-        />
-        {formik.touched.mobile && formik.errors.mobile ? (
-          <div>{formik.errors.mobile}</div>
-        ) : null}
+        <input type="text" id="mobile" name="mobile" onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.mobile} />
+        {formik.touched.mobile && formik.errors.mobile ? (<div>{formik.errors.mobile}</div>) : null}
       </div>
       <button type="submit" disabled={!formik.isValid}>
         Submit
