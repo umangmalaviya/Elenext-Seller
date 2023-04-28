@@ -1,0 +1,142 @@
+.modal-content {
+    padding: 50px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 700px;
+    margin: 100px auto;
+}
+
+.modal-content .btn-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.modal-content h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.modal-content form input {
+    width: 100%;
+    height: 60px;
+    padding: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    outline: none;
+}
+
+.modal-content label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.modal-content form .check-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.modal-content form .check-part p {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+.modal-content form .check-part input {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    margin: 0 10px 0 0;
+}
+
+.modal-content a.lost-pass {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #1E30D9;
+}
+
+.loginbtn-part {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.modal-content .lrBtn {
+    background: #FEA700;
+    border-radius: 5px;
+    width: 100%;
+    height: 46px;
+    padding: 12px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #272220;
+    border: none;
+    outline: none;
+}
+
+.modal-content h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    text-align: center;
+    opacity: 0.5;
+    margin-bottom: 20px;
+}
+
+.modal-content a.lr-cBtn {
+    background: #FEA700;
+    border-radius: 5px;
+    width: 100%;
+    height: 46px;
+    padding: 12px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #272220;
+    border: none;
+    outline: none;
+}
