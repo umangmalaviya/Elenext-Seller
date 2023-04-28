@@ -9,9 +9,9 @@ import { useFormik } from 'formik';
 
 const Register = () => {
 
-  const [phoneNumber, setPhoneNumber] = useState('');
-  const [password, setPassword] = useState('');
-  const [showPassword, setShowPassword] = useState(false);
+  // const [phoneNumber, setPhoneNumber] = useState('');
+  // const [password, setPassword] = useState('');
+  // const [showPassword, setShowPassword] = useState(false);
 
   const formik = useFormik({
     initialValues: {
@@ -43,66 +43,68 @@ const Register = () => {
       // handle form submission logic
       console.log(values);
       // redirect to another page
-      window.location.href = '/Login';
+      window.location.href = '/login';
     },
   })
 
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  // const handleInputChange = (event) => {
+  //   setPassword(event.target.value);
+  // }
 
-  function isValidEmail(email) {
-    return emailRegex.test(email);
-  }
-
-  const handleInputChange = (event) => {
-    setPassword(event.target.value);
-  }
-
-  const toggleShowPassword = () => {
-    setShowPassword(!showPassword);
-  }
+  // const toggleShowPassword = () => {
+  //   setShowPassword(!showPassword);
+  // }
 
   return (
     <div className="register">
       <div className="container-fluid">
         <form onSubmit={formik.handleSubmit}>
+
           <p className="inner-register">Register</p>
-          <p className="name">
-            Name :
-          </p>
+
+          <p className="name">Name :</p>
           <input className='input-tag' type="text" />
-          <p className="name">
-            Mobile No :
-          </p>
-          <div className="mobile">
+
+          <p className="name">Mobile No :</p>
+          <div id="mobile" type="tel" className="mobile">
             <PhoneInput
               international
               defaultCountry="IN"
-              value={phoneNumber}
-              onChange={setPhoneNumber}
+              // value={phoneNumber}
+              // onChange={setPhoneNumber}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              value={formik.values.mobile}
+              maxLength={16}
             />
+
+            {formik.touched.mobile && formik.errors.mobile ? (<div>{formik.errors.mobile}</div>) : null}
+
           </div>
-          <p className="name">
-            E-mail :
-          </p>
-          <input className='input-tag' type="email" onChange={formik.handleChange}
+
+          <p className="name">E-mail :</p>
+          <input className='input-tag'
+            id="email"
+            type="email"
+            onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.email} />
-          {formik.touched.email && formik.errors.email ? (
-            <div>{formik.errors.email}</div>
-          ) : null}
-          <p className="name">
-            Password :
-          </p>
+
+          {formik.touched.email && formik.errors.email ? (<div>{formik.errors.email}</div>) : null}
+
+          <p className="name">Password :</p>
           <div className="diplay-flex">
-            <input className='input-tag' type={showPassword ? 'text' : 'password'} onChange={formik.handleChange}
+            <input className='input-tag'
+              id="password"
+              type="password"
+              onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.password} />
-            {formik.touched.password && formik.errors.password ? (
-              <div>{formik.errors.password}</div>
-            ) : null}
-            <button onClick={toggleShowPassword}>
+
+            {formik.touched.password && formik.errors.password ? (<div>{formik.errors.password}</div>) : null}
+            {/* <button onClick={toggleShowPassword}>
               {showPassword ? <img src={closedEye} alt=" " className='button-img' /> : <img src={eye} alt=" " className='button-img' />}
-            </button>
+            </button> */}
           </div>
           <p className='long-msg'>By enrolling your mobile phone number, you consent to receive automated security notifications via text message from Amazon. Message and data rates may apply.</p>
           <button type='submit' className='submit-btn' disabled={!formik.isValid}>Submit</button>
