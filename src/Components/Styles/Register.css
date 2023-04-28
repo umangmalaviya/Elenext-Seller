@@ -1,0 +1,137 @@
+.register {
+    margin: 100px 300px;
+    border: 1px solid;
+    padding: 60px;
+}
+
+.inner-register {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: #000000;
+}
+
+.name {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 20px 0;
+    font-size: 16px;
+    color: #000000;
+}
+
+.input-tag {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: 100%;
+    max-width: 100%;
+    height: 40px;
+    padding: 0 10px;
+}
+
+.mobile {
+    display: flex;
+    gap: 10px;
+}
+
+.mobile p {
+    background: #F0F2F1;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    padding: 10px 5px;
+    width: 100%;
+    max-width: 100px;
+    height: 40px;
+}
+
+.PhoneInput {
+    gap: 20px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.PhoneInputInput {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px 5px;
+    width: 100%;
+    height: 40px;
+}
+
+.PhoneInputCountry {
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 5px;
+    background: #F0F2F1;
+}
+
+.diplay-flex {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.diplay-flex button {
+    position: absolute;
+    right: 100%;
+    border-radius: 5px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+}
+
+.button-img {
+    width: 100%;
+    max-width: 40px;
+    padding: 8px;
+}
+
+.long-msg {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+    opacity: 0.5;
+    margin: 30px 0;
+}
+
+.submit-btn {
+    background: #FEA700;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: #272220;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.already-have {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+}
+
+.flex-ah a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.flex-ah {
+    display: flex;
+    margin-top: 40px;
+    gap: 5px;
+    align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .register {
+        margin: 100px 60px;
+    }
+}
