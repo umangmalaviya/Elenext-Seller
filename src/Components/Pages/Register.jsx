@@ -12,13 +12,14 @@ const Register = () => {
     initialValues: {
       email: '',
       password: '',
-      // mobile: '',
+      mobile: '',
       name: ''
     },
 
 
     validate: (values) => {
       const errors = {};
+      const phoneNumberRegex = /^\+[1-9]\d{1,14}$/;
 
       if (!values.name) {
         errors.name = 'name is required';
@@ -40,24 +41,17 @@ const Register = () => {
         errors.mobile = 'Mobile is required';
       } else if (isNaN(Number(values.mobile))) {
         errors.mobile = 'Mobile number must be a number';
-      } else if (!phoneNumberRegex.test(phoneNumber)) {
+      }
+       else if (values.mobile.length < 10 || values.mobile.length > 10) {
         errors.mobile = 'mobile must be at least 10 characters';
       }
       return errors;
     },
-
     onSubmit: (values) => {
-      values.preventDefault();
-      // validate phone number input
-      const isValid = /^\+[1-9]\d{1,14}$/.test(phoneNumber);
-      if (isValid) {
-        window.location.href = "/OtpFill";
-      } else {
-        alert("Phone Please");
-      }
-    }
-  },
-  )
+      console.log(values);
+      window.location.href = '/login';
+    },
+  })
 
   return (
     <div className="register">
@@ -74,19 +68,19 @@ const Register = () => {
 
           <p className="name">Mobile No :</p>
           <div className="mobile">
-            <PhoneInput
+            {/* <PhoneInput
               defaultCountry="US"
               value={phoneNumber}
               onChange={setPhoneNumber}
               placeholder="Enter phone number"
-            />
+            /> */}
           </div>
 
-          {/* <input id="mobile" name="mobile" className='input-tag' type="text" onChange={formik.handleChange} onBlur={formik.handleBlur}
-            value={formik.values.mobile} /> */}
+          <input id="mobile" name="mobile" className='input-tag' type="text" onChange={formik.handleChange} onBlur={formik.handleBlur}
+            value={formik.values.mobile} />
 
 
-          {/* {formik.touched.mobile && formik.errors.mobile ? (<div>{formik.errors.mobile}</div>) : null} */}
+          {formik.touched.mobile && formik.errors.mobile ? (<div>{formik.errors.mobile}</div>) : null}
 
 
           <p className="name">E-mail :</p>
