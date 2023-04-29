@@ -5,6 +5,7 @@ import Register from "./Components/Pages/Register";
 import Footer from "./Components/Pages/Footer";
 import OtpFill from "./Components/Pages/OtpFill";
 import Demo from "./Components/Pages/Demo";
+import RegisterAndStart from "./Components/Pages/RegisterAndStart";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/OtpFill" element={<OtpFill />} />
           <Route path="/Demo" element={<Demo />} />
+          <Route path="/RegisterAndStart" element={<RegisterAndStart />} />
         </Routes>
         <Footer />
       </BrowserRouter>
