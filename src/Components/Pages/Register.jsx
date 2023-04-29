@@ -1,12 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import "../Styles/Register.css"
-import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
 import { Link } from 'react-router-dom';
 import { useFormik } from 'formik';
 
 const Register = () => {
-  const [phoneNumber, setPhoneNumber] = useState("");
 
   const formik = useFormik({
     initialValues: {
@@ -19,7 +17,6 @@ const Register = () => {
 
     validate: (values) => {
       const errors = {};
-      const phoneNumberRegex = /^\+[1-9]\d{1,14}$/;
 
       if (!values.name) {
         errors.name = 'name is required';
