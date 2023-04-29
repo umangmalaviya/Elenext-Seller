@@ -14,7 +14,7 @@ const OtpFill = () => {
                     <Link to="#">Resend OTP</Link>
                 </div>
                 <input type="number" name="otp" id="otp" required />
-                <button class="register-Btn">Create Your Seller Account</button>
+                <button className="register-Btn">Create Your Seller Account</button>
                 <h4>By creating an account you agree to Amazon's <Link to="#">Conditions of Use & Sale.</Link> Please see our <Link to="#">Privacy Notice,</Link> our <Link to="#">Cookies Notice</Link> and our <Link to="#">Interest-Based Ads Notice.</Link></h4>
             </div>
         </>

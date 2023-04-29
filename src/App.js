@@ -6,6 +6,7 @@ import Footer from "./Components/Pages/Footer";
 import OtpFill from "./Components/Pages/OtpFill";
 import Demo from "./Components/Pages/Demo";
 import RegisterAndStart from "./Components/Pages/RegisterAndStart";
+import TwoStepV from "./Components/Pages/TwoStepV";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/OtpFill" element={<OtpFill />} />
           <Route path="/Demo" element={<Demo />} />
           <Route path="/RegisterAndStart" element={<RegisterAndStart />} />
+          <Route path="/TwoStepV" element={<TwoStepV />} />
         </Routes>
         <Footer />
       </BrowserRouter>

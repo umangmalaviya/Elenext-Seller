@@ -1,0 +1,49 @@
+.two_step_v {
+    padding: 100px 0;
+}
+
+.two_step_v h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.two_step_v p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin-bottom: 25px;
+}
+
+.two_step_btns {
+    display: flex;
+    gap: 30px;
+}
+
+.two_step_btns a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #272220;
+    padding: 12px 51px;
+    border-radius: 5px;
+}
+
+.two_step_btns a:first-child {
+    background: #FEA700;
+}
+
+.two_step_btns a:last-child {
+    background: #F5F5F5;
+}
