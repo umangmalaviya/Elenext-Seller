@@ -39,7 +39,7 @@ const Register = () => {
       } else if (isNaN(Number(values.mobile))) {
         errors.mobile = 'Mobile number must be a number';
       }
-       else if (values.mobile.length < 10 || values.mobile.length > 10) {
+      else if (values.mobile.length < 10 || values.mobile.length > 10) {
         errors.mobile = 'mobile must be at least 10 characters';
       }
       return errors;
@@ -104,7 +104,7 @@ const Register = () => {
 
           {formik.touched.password && formik.errors.password ? (<div>{formik.errors.password}</div>) : null}
 
-          <p className='long-msg'>By enrolling your mobile phone number, you consent to receive automated security notifications via text message from Amazon. Message and data rates may apply.</p>
+          <p className='long-msg'>By enrolling your mobile phone number, you consent to receive automated security notifications via text message from Elenext. Message and data rates may apply.</p>
 
           <button className='submit-btn' type="submit">Submit</button>
         </form>

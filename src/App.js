@@ -11,6 +11,7 @@ import TwoStepDetail from "./Components/Pages/TwoStepDetail";
 import RegisterAndStartDetail from "./Components/Pages/RegisterAndStartDetail";
 import TwoStepOtp from "./Components/Pages/TwoStepOtp";
 import UpdateYourTexDetails from "./Components/Pages/UpdateYourTexDetails";
+import ShowFillDetails from "./Components/Pages/ShowFillDetails";
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path="/RegisterAndStartDetail" element={<RegisterAndStartDetail />} />
           <Route path="/TwoStepOtp" element={<TwoStepOtp />} />
           <Route path="/UpdateYourTexDetails" element={<UpdateYourTexDetails />} />
+          <Route path="/ShowFillDetails" element={<ShowFillDetails />} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -1,0 +1,78 @@
+.i-have {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #979797;
+    display: flex;
+    gap: 10px;
+    margin: 30px 0 0 0;
+}
+
+.label {
+    width: 100%;
+}
+
+.i-want-to {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #979797;
+}
+
+.flex-inside {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 40%;
+}
+
+.flex-inside1 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+}
+
+.bg-color {
+    background: #F0F2F1;
+    border: 1px solid #B3B3B3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 40px 0;
+}
+
+.if-you-dont {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #979797;
+}
+
+.gst-ex {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.upi_detail {
+    margin-left: 20px;
+}
+
+.upi_detail1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #979797;
+    margin: 10px 0;
+}
+
+.apply-by-self {
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000000;
+    margin: 30px 0;
+}

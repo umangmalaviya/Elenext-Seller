@@ -15,7 +15,7 @@ const OtpFill = () => {
                 </div>
                 <input type="number" name="otp" id="otp" required />
                 <button className="register-Btn">Create Your Seller Account</button>
-                <h4>By creating an account you agree to Amazon's <Link to="#">Conditions of Use & Sale.</Link> Please see our <Link to="#">Privacy Notice,</Link> our <Link to="#">Cookies Notice</Link> and our <Link to="#">Interest-Based Ads Notice.</Link></h4>
+                <h4>By creating an account you agree to Elenext's <Link to="#">Conditions of Use & Sale.</Link> Please see our <Link to="#">Privacy Notice,</Link> our <Link to="#">Cookies Notice</Link> and our <Link to="#">Interest-Based Ads Notice.</Link></h4>
             </div>
         </>
     )
