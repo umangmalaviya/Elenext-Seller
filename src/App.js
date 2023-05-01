@@ -9,6 +9,7 @@ import RegisterAndStart from "./Components/Pages/RegisterAndStart";
 import TwoStepV from "./Components/Pages/TwoStepV";
 import TwoStepDetail from "./Components/Pages/TwoStepDetail";
 import RegisterAndStartDetail from "./Components/Pages/RegisterAndStartDetail";
+import TwoStepOtp from "./Components/Pages/TwoStepOtp";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/TwoStepV" element={<TwoStepV />} />
           <Route path="/twostepdetail" element={<TwoStepDetail />} />
           <Route path="/RegisterAndStartDetail" element={<RegisterAndStartDetail />} />
+          <Route path="/TwoStepOtp" element={<TwoStepOtp />} />
         </Routes>
         <Footer />
       </BrowserRouter>
