@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom'
+import "../Styles/TwoStepOtp.css"
 
 function TwoStepOtp() {
     const [mobileNumber, setMobileNumber] = useState("");
@@ -36,30 +38,51 @@ function TwoStepOtp() {
     return (
         <div>
             {showMobileBox && (<>
-                <h4>Step 1 to 2</h4>
-                <div className="twostepotp_first">
-                    
+                <div className="twostepotp_first twostepotp_cnt">
+                    <div className="container-fluid">
+                        <h4>Step 1 to 2</h4>
+                        <div className="twostepotp_inn twostepotp_first_inn">
+                            <h3>Phone Number</h3>
+                            <p>Please specify the mobile number that you wish to use as your authenticator. Once you attempt to log in, a single-use password will be sent via text message to this number for authentication purposes. This additional security measure helps to safeguard your account against unauthorized access. Thank you.</p>
+                            <form onSubmit={handleMobileSubmit}>
+                                <label>
+                                    Enter Your Mobile Number <br />
+                                    <input type="tel" value={mobileNumber} onChange={handleMobileNumberChange} />
+                                </label> <br />
+                                {mobileError && <div className="error">{mobileError}</div>}
+                                <button type="submit">Continue</button>
+                            </form>
+                            <h5>Message and data rates may apply.</h5>
+                        </div>
+                    </div>
                 </div>
-                <form onSubmit={handleMobileSubmit}>
-                    <label>
-                        Mobile Number:
-                        <input type="tel" value={mobileNumber} onChange={handleMobileNumberChange} />
-                    </label>
-                    {mobileError && <div>{mobileError}</div>}
-                    <button type="submit">Submit</button>
-                </form>
             </>
             )}
             {showOtpBox && (
                 <>
-                    <h4>Step 2 to 2</h4>
-                    <form onSubmit={handleOtpSubmit}>
-                        <label>
-                            OTP:
-                            <input type="text" value={otp} onChange={handleOtpChange} />
-                        </label>
-                        <button type="submit">Verify OTP</button>
-                    </form>
+                    <div className="twostepotp_second twostepotp_cnt">
+                        <div className="container-fluid">
+                            <h4>Step 2 to 2</h4>
+                            <div className="twostepotp_sec_inn twostepotp_inn">
+                                <h3>Phone Number</h3>
+                                <div className="change-phn">
+                                    <p>+919785597455</p>
+                                    <Link to="#"> Change</Link>
+                                </div>
+                                <p>'We've sent a One Time Password (OTP) to your phone number. Please enter it below.' similar short paragraph with more option</p>
+                                <form onSubmit={handleOtpSubmit}>
+                                    <label>
+                                        Enter OTP <br />
+                                        <input type="text" value={otp} onChange={handleOtpChange} />
+                                    </label>
+                                    <br />
+                                    <Link className="r-otp" href="#">Resend OTP</Link>
+                                    <button className="save-btn" type="submit">Continue</button> <br />
+                                </form>
+                                <h5>Message and data rates may apply.</h5>
+                            </div>
+                        </div>
+                    </div>
                 </>
             )}
         </div>

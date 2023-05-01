@@ -1,0 +1,190 @@
+.twostepotp_cnt {
+    padding: 100px 0;
+}
+
+.twostepotp_cnt h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    opacity: 0.6;
+    margin-bottom: 30px;
+}
+
+.twostepotp_inn {
+    width: 100%;
+    max-width: 800px;
+    padding: 46px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+
+.twostepotp_inn h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.twostepotp_inn p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    opacity: 0.8;
+    margin-bottom: 25px;
+}
+
+.twostepotp_inn form label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.twostepotp_inn form input {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    width: 340px;
+    height: 40px;
+    padding: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-top: 20px;
+    outline: none;
+}
+
+.twostepotp_inn form button {
+    background: #FEA700;
+    border-radius: 5px;
+    width: 240px;
+    height: 46px;
+    padding: 12px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #272220;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.twostepotp_inn .error {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    color: #FF0000;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+.twostepotp_inn h5 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    color: #030000;
+}
+
+.twostepotp_sec_inn .change-phn {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+}
+
+.twostepotp_sec_inn .change-phn p {
+    color: #000000;
+    margin: 0;
+}
+
+.twostepotp_sec_inn .change-phn a {
+    color: #1B57C4;
+}
+
+.twostepotp_sec_inn .r-otp {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    color: #0E4DC5;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 991px) {
+    .twostepotp_cnt {
+        padding: 70px 0;
+    }
+
+    .twostepotp_cnt h4 {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 25px;
+    }
+
+    .twostepotp_inn {
+        max-width: 700px;
+        padding: 24px;
+    }
+
+    .twostepotp_inn h3 {
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .twostepotp_inn p {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+
+    .twostepotp_inn form label {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .twostepotp_inn form input {
+        width: 300px;
+        font-size: 15px;
+        line-height: 18px;
+        margin-top: 14px;
+    }
+
+    .twostepotp_inn form button {
+        width: 200px;
+        height: 42px;
+        padding: 11px;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 25px;
+    }
+
+    .twostepotp_inn .error {
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
