@@ -14,14 +14,14 @@ const RegisterAndStart = () => {
                 </div>
                 <p className='please-have'>Please ensure that all the information you submit is accurate.</p>
                 <p className='enter-details'>Enter details below to continue registration</p>
-                <p className='company-bussiness'>Company/Business name*</p>
+                <p className='company-bussiness'>Store Name<span style={{ color: "red" }}>*</span></p>
                 <input type="text" className='input-type-text' />
                 <p className='please-have'>Enter the company/business name as registered in GST/PAN</p>
                 <p className='seller-agreement'>Seller Agreement</p>
                 <div className="display-flex-for">
                     <input type="checkbox" />I have read and agree to comply with and/or be bound by the terms and conditions of Amazon Services Business Solutions Agreement, Easy Ship Service & Runway Terms and Conditions and Amazon Business (B2B) Terms & Conditions
                 </div>
-                <button class="Continue123" type="submit">Continue</button>
+                <button className="Continue123" type="submit">Continue</button>
                 <div className="flex-ah">
                     <p className='already-have'>Like to create new account?</p>
                     <Link to='/register'>Click here</Link>
