@@ -12,6 +12,8 @@ import RegisterAndStartDetail from "./Components/Pages/RegisterAndStartDetail";
 import TwoStepOtp from "./Components/Pages/TwoStepOtp";
 import UpdateYourTexDetails from "./Components/Pages/UpdateYourTexDetails";
 import ShowFillDetails from "./Components/Pages/ShowFillDetails";
+import LandingPage from "./Components/Pages/LandingPage";
+import Home from "./Components/Pages/Home";
 
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
+          <Route path="/" element={<LandingPage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/OtpFill" element={<OtpFill />} />
@@ -31,6 +34,7 @@ function App() {
           <Route path="/TwoStepOtp" element={<TwoStepOtp />} />
           <Route path="/UpdateYourTexDetails" element={<UpdateYourTexDetails />} />
           <Route path="/ShowFillDetails" element={<ShowFillDetails />} />
+          <Route path="/Home" element={<Home />} />
         </Routes>
         <Footer />
       </BrowserRouter>
