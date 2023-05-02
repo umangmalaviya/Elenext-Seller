@@ -39,15 +39,30 @@ span {
 }
 
 /* header-section */
-.middle-header {
-    padding: 30px 0;
-    background: #EDEDED;
+header {
+    padding: 9px 0;
 }
 
-.middle-header-inn {
-    display: flex;
+.navbar-brand {
+    width: 25%;
+}
+
+.navbar-expand-lg .navbar-collapse {
     justify-content: space-between;
-    align-items: center;
+    width: 75%;
+}
+
+.navbar-expand-lg .navbar-nav {
+    width: 65%;
+    justify-content: space-evenly;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 38px;
+    color: #111111;
 }
 
 .login-option {
@@ -62,7 +77,7 @@ span {
     font-size: 12px;
     line-height: 18px;
     letter-spacing: 0.02em;
-    width: 100px;
+    width: 120px;
     height: 40px;
     padding: 10px;
     border: 1px solid #FEA700;
@@ -70,6 +85,15 @@ span {
     background: transparent;
     text-align: center;
     color: #FEA700;
+}
+
+.login-option a.login_btn {
+    width: 100px;
+}
+
+.login-option a.signup_btn {
+    background: #FEA700;
+    color: #fff;
 }
 
 /* header-section */
@@ -84,16 +108,13 @@ span {
     .navbar-toggler:focus {
         box-shadow: none;
     }
-}
 
-@media screen and (max-width: 767px) {
-    .middle-header-inn {
-        flex-direction: column;
-        gap: 17px;
+    .navbar-expand-lg .navbar-nav {
+        margin: 15px auto 25px;
     }
 
-    .middle-header {
-        padding: 18px 0;
+    .login-option {
+        justify-content: center;
     }
 }
 
