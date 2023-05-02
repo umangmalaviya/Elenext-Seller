@@ -1,10 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import "../Styles/TwoStepV.css"
+import Footer from './Footer'
+import Navbar from './Navbar'
 
 const TwoStepDetail = () => {
     return (
         <>
+            <Navbar />
             <div className='twostepdetail'>
                 <div className='container-fluid'>
                     <h2>Two-Step Verification</h2>
@@ -27,6 +30,7 @@ const TwoStepDetail = () => {
                     <Link to="#" className="started_btn">Get Started</Link>
                 </div>
             </div>
+            <Footer />
         </>
     )
 }

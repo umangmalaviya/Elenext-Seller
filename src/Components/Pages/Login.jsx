@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import "../Styles/Login.css"
+import Footer from './Footer';
+import Navbar from './Navbar';
 
 const Login = () => {
   const [emailOrMobile, setEmailOrMobile] = useState("");
@@ -33,6 +35,7 @@ const Login = () => {
   };
   return (
     <>
+      <Navbar />
       <div className="modal-content login-modal">
         <h2>Login</h2>
         <form onSubmit={handleSubmit}>
@@ -52,6 +55,7 @@ const Login = () => {
         <h4>Don't Have an Account?</h4>
         <Link to="#" className="register-Btn lr-cBtn">Create Your Seller Account</Link>
       </div>
+      <Footer />
     </>
   )
 }

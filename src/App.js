@@ -1,8 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./Components/Pages/Login";
-import Navbar from "./Components/Pages/Navbar";
 import Register from "./Components/Pages/Register";
-import Footer from "./Components/Pages/Footer";
 import OtpFill from "./Components/Pages/OtpFill";
 import Demo from "./Components/Pages/Demo";
 import RegisterAndStart from "./Components/Pages/RegisterAndStart";
@@ -20,7 +18,6 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/login" element={<Login />} />
@@ -34,9 +31,9 @@ function App() {
           <Route path="/TwoStepOtp" element={<TwoStepOtp />} />
           <Route path="/UpdateYourTexDetails" element={<UpdateYourTexDetails />} />
           <Route path="/ShowFillDetails" element={<ShowFillDetails />} />
+
           <Route path="/Home" element={<Home />} />
         </Routes>
-        <Footer />
       </BrowserRouter>
     </>
   );

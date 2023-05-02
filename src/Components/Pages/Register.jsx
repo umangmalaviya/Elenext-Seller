@@ -3,6 +3,8 @@ import "../Styles/Register.css"
 import 'react-phone-number-input/style.css';
 import { Link } from 'react-router-dom';
 import { useFormik } from 'formik';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 const Register = () => {
 
@@ -51,71 +53,75 @@ const Register = () => {
   })
 
   return (
-    <div className="register">
-      <div className="container-fluid">
-        <form onSubmit={formik.handleSubmit}>
+    <>
+      <Navbar />
+      <div className="register">
+        <div className="container-fluid">
+          <form onSubmit={formik.handleSubmit}>
 
-          <p className="inner-register">Register</p>
+            <p className="inner-register">Register</p>
 
-          <p className="name">Name :</p>
-          <input id="name" name="name" className='input-tag' type="text" onChange={formik.handleChange} onBlur={formik.handleBlur}
-            value={formik.values.name} />
+            <p className="name">Name :</p>
+            <input id="name" name="name" className='input-tag' type="text" onChange={formik.handleChange} onBlur={formik.handleBlur}
+              value={formik.values.name} />
 
-          {formik.touched.name && formik.errors.name ? (<div>{formik.errors.name}</div>) : null}
+            {formik.touched.name && formik.errors.name ? (<div>{formik.errors.name}</div>) : null}
 
-          <p className="name">Mobile No :</p>
-          <div className="mobile">
-            {/* <PhoneInput
+            <p className="name">Mobile No :</p>
+            <div className="mobile">
+              {/* <PhoneInput
               defaultCountry="US"
               value={phoneNumber}
               onChange={setPhoneNumber}
               placeholder="Enter phone number"
             /> */}
-          </div>
+            </div>
 
-          <input id="mobile" name="mobile" className='input-tag' type="text" onChange={formik.handleChange} onBlur={formik.handleBlur}
-            value={formik.values.mobile} />
-
-
-          {formik.touched.mobile && formik.errors.mobile ? (<div>{formik.errors.mobile}</div>) : null}
+            <input id="mobile" name="mobile" className='input-tag' type="text" onChange={formik.handleChange} onBlur={formik.handleBlur}
+              value={formik.values.mobile} />
 
 
-          <p className="name">E-mail :</p>
-          <input
-            className='input-tag'
-            id="email"
-            type="email"
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.email} />
+            {formik.touched.mobile && formik.errors.mobile ? (<div>{formik.errors.mobile}</div>) : null}
 
-          {formik.touched.email && formik.errors.email ? (<div>{formik.errors.email}</div>) : null}
 
-          <p className="name">Password :</p>
-          <div className="diplay-flex">
+            <p className="name">E-mail :</p>
             <input
               className='input-tag'
-              id="password"
-              type="password"
+              id="email"
+              type="email"
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              value={formik.values.password} />
+              value={formik.values.email} />
+
+            {formik.touched.email && formik.errors.email ? (<div>{formik.errors.email}</div>) : null}
+
+            <p className="name">Password :</p>
+            <div className="diplay-flex">
+              <input
+                className='input-tag'
+                id="password"
+                type="password"
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                value={formik.values.password} />
+            </div>
+
+            {formik.touched.password && formik.errors.password ? (<div>{formik.errors.password}</div>) : null}
+
+            <p className='long-msg'>By enrolling your mobile phone number, you consent to receive automated security notifications via text message from Elenext. Message and data rates may apply.</p>
+
+            <button className='submit-btn' type="submit">Submit</button>
+          </form>
+
+          <div className="flex-ah">
+            <p className='already-have'>Already Have An Account? </p>
+            <Link to='/login'>Sign In.</Link>
           </div>
 
-          {formik.touched.password && formik.errors.password ? (<div>{formik.errors.password}</div>) : null}
-
-          <p className='long-msg'>By enrolling your mobile phone number, you consent to receive automated security notifications via text message from Elenext. Message and data rates may apply.</p>
-
-          <button className='submit-btn' type="submit">Submit</button>
-        </form>
-
-        <div className="flex-ah">
-          <p className='already-have'>Already Have An Account? </p>
-          <Link to='/login'>Sign In.</Link>
         </div>
-
       </div>
-    </div>
+      <Footer />
+    </>
   )
 }
 

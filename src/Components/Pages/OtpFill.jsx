@@ -1,10 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import "../Styles/OtpFill.css"
+import Footer from './Footer'
+import Navbar from './Navbar'
 
 const OtpFill = () => {
     return (
         <>
+            <Navbar />
             <div className='otp_part'>
                 <h2>Verify mobile number</h2>
                 <p>A text with a One Time Password (OTP) has been sent to your mobile number:
@@ -17,6 +20,7 @@ const OtpFill = () => {
                 <button className="register-Btn">Create Your Seller Account</button>
                 <h4>By creating an account you agree to Elenext's <Link to="#">Conditions of Use & Sale.</Link> Please see our <Link to="#">Privacy Notice,</Link> our <Link to="#">Cookies Notice</Link> and our <Link to="#">Interest-Based Ads Notice.</Link></h4>
             </div>
+            <Footer />
         </>
     )
 }
