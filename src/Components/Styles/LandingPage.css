@@ -93,6 +93,75 @@
 }
 
 /* hero-section */
+/* achievment_section */
+.achievment_section {
+    padding: 100px 0;
+}
+
+.achievment_inn {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.achievment_cnt {
+    width: 100%;
+    max-width: 300px;
+    padding: 25px;
+    background: #F6F7F9;
+    border-radius: 10px;
+}
+
+.achievment_cnt h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    color: #FEA700;
+    margin-bottom: 15px;
+}
+
+.achievment_cnt h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+}
+
+/* achievment_section */
+/* process-section */
+.process_section h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #111111;
+    margin-bottom: 40px;
+}
+
+.process_inn {
+    display: flex;
+    justify-content: center;
+    gap: 23px;
+}
+
+.process_cnt {
+    width: 100%;
+    max-width: 320px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+}
+
+.process_info {
+    height: 100%;
+}
+
+/* process-section */
 
 @media screen and (max-width: 1300px) {
 
@@ -121,6 +190,18 @@
     }
 
     /* hero-section */
+    /* achievment_section */
+    .achievment_cnt h2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .achievment_cnt h4 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    /* achievment_section */
 }
 
 @media screen and (max-width: 991px) {
@@ -148,6 +229,27 @@
     }
 
     /* hero-section */
+    /* achievment_section */
+    .achievment_inn {
+        flex-flow: row wrap;
+    }
+
+    .achievment_cnt {
+        max-width: 250px;
+        padding: 20px;
+    }
+
+    .achievment_cnt h2 {
+        font-size: 23px;
+        line-height: 29px;
+    }
+
+    .achievment_cnt h4 {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+    /* achievment_section */
 }
 
 @media screen and (max-width: 767px) {
@@ -186,4 +288,26 @@
     }
 
     /* hero-section */
+    /* achievment_section */
+    .achievment_section {
+        padding: 65px 0;
+    }
+
+    .achievment_cnt {
+        max-width: 212px;
+        padding: 15px;
+    }
+
+    .achievment_cnt h2 {
+        font-size: 21px;
+        line-height: 27px;
+        margin-bottom: 12px;
+    }
+
+    .achievment_cnt h4 {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    /* achievment_section */
 }
