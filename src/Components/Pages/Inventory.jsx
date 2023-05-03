@@ -7,7 +7,7 @@ import { MdInventory } from "react-icons/md";
 import "../Styles/Demo.css"
 import logo from "../Images/new-seller-logo.svg"
 
-const Home = () => {
+const Inventory = () => {
     const [expanded, setExpanded] = useState(false);
     const location = useLocation();
 
@@ -22,7 +22,7 @@ const Home = () => {
                 <Nav className="flex-column">
                     <img src={logo} alt="logo" className="logo" />
                     <LinkContainer to="/Home" exact>
-                        <Nav.Link as={NavLink} to="/Inventory" exact ativeclassname="active">
+                        <Nav.Link as={NavLink} to="/Home" exact ativeclassname="active">
                             <FaHome className="mr-2" size='25px' /> Home
                         </Nav.Link>
                     </LinkContainer>
@@ -52,4 +52,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Inventory;

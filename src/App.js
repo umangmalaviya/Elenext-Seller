@@ -12,6 +12,7 @@ import UpdateYourTexDetails from "./Components/Pages/UpdateYourTexDetails";
 import ShowFillDetails from "./Components/Pages/ShowFillDetails";
 import LandingPage from "./Components/Pages/LandingPage";
 import Home from "./Components/Pages/Home";
+import Inventory from "./Components/Pages/Inventory";
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           <Route path="/ShowFillDetails" element={<ShowFillDetails />} />
 
           <Route path="/Home" element={<Home />} />
+          <Route path="/Inventory" element={<Inventory />} />
         </Routes>
       </BrowserRouter>
     </>
