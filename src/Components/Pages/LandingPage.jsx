@@ -12,6 +12,11 @@ import logo from "../Images/logo.svg"
 import play from "../Images/play.svg"
 
 const LandingPage = () => {
+    const [showMore, setShowMore] = useState(false);
+
+    const handleSeeMore = () => {
+        setShowMore(true);
+    };
     const [mobileNumber, setMobileNumber] = useState("");
     const [mobileError, setMobileError] = useState("");
     const handleMobileNumberChange = (e) => {
@@ -169,6 +174,76 @@ const LandingPage = () => {
                 </div>
             </section>
             {/* learning_hub */}
+
+            {/* growth-section */}
+            <section className='reward_sec growth_sec'>
+                <div className='reward_inn'>
+                    <div className='reward_cnt'>
+                        <h2>Enhance Your Business Growth Through Elenext</h2>
+                    </div>
+                    <div className='reward_info'>
+                        <div className='reward_info_fir reward_info_cnt'>
+                            <div className='reward_info_box'>
+                                <img src={require('../Images/growth-img1.png')} alt="reward img" />
+                                <h3>Lowest Shipping Costs</h3>
+                                <p>Sell your products across India to over 28,000+ pincodes at lowest delivery cost.</p>
+                            </div>
+                            <div className='reward_info_box'>
+                                <img src={require('../Images/growth-img2.png')} alt="reward img" />
+                                <h3>Next Day Dispatch Program</h3>
+                                <p>Sign up for the quick Next Day Dispatch (NDD) Program and get higher visibility.</p>
+                            </div>
+                        </div>
+                        <div className='reward_info_sec reward_info_cnt'>
+                            <div className='reward_info_box'>
+                                <img src={require('../Images/growth-img3.png')} alt="reward img" />
+                                <h3>Ads to grow more</h3>
+                                <p>Use selling tools like to be more visible and sell more products</p>
+                            </div>
+                            <div className='reward_info_box'>
+                                <img src={require('../Images/growth-img4.png')} alt="reward img" />
+                                <h3>Business Insights</h3>
+                                <p>Use product & price recommendations so that you’re always on top of your business</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/* growth-section */}
+
+            {/* category-section */}
+            <section className='category_sec'>
+                <div className='container-fluid'>
+                    <h2>Popular Categories to Sell Online</h2>
+                    <div className='category_inn'>
+                        <p>Sell Sarees Online</p>
+                        <p>Sell Jewellery Online</p>
+                        <p>Sell Tshirts Online</p>
+                        <p>Sell Shirts Online</p>
+                        <p>Sell Watches Online</p>
+                        <p>Sell Electronics Online</p>
+                        <p>Sell Clothes Online</p>
+                        <p>Sell Socks Online</p>
+                        {showMore && (
+                            <div className='category_inn'>
+                                <p>Sell Sarees Online</p>
+                                <p>Sell Jewellery Online</p>
+                                <p>Sell Tshirts Online</p>
+                                <p>Sell Shirts Online</p>
+                                <p>Sell Watches Online</p>
+                                <p>Sell Electronics Online</p>
+                                <p>Sell Clothes Online</p>
+                                <p>Sell Socks Online</p>
+                            </div>
+                        )}
+                    </div>
+                    {!showMore && (
+                        <div className='viewmore_part'><button onClick={handleSeeMore} className="viewmore_btn">View More</button></div>
+                    )}
+                </div>
+            </section>
+            {/* category-section */}
+
             <Footer />
         </>
     )
