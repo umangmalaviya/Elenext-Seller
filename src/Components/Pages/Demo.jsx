@@ -1,43 +1,51 @@
-import React from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
+import React, { useState } from "react";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
+import { NavLink, useLocation } from "react-router-dom";
+import { FaHome, FaCog, FaSignOutAlt } from "react-icons/fa";
 import "../Styles/Demo.css"
 
-function Demo() {
-  const data = [
-    { name: 'Jan', uv: 4000 },
-    { name: 'Feb', uv: 3000 },
-    { name: 'Mar', uv: 2000 },
-    { name: 'Apr', uv: 2780 },
-    { name: 'May', uv: 1890 },
-    { name: 'Jun', uv: 100 },
-    { name: 'Jul', uv: 3490 },
-    { name: 'Aug', uv: 4000 },
-    { name: 'Sep', uv: 3000 },
-    { name: 'Oct', uv: 2000 },
-    { name: 'Nov', uv: 2780 },
-    { name: 'Dec', uv: 100 },
-  ];
+const Demo = () => {
+  const [expanded, setExpanded] = useState(false);
+  const location = useLocation();
+
+  const handleToggle = () => {
+    setExpanded(!expanded);
+  };
 
   return (
-    <LineChart
-      width={400}
-      height={400}
-      data={data}
-      margin={{ top: 5, right: 20, left: 10, bottom: 5 }}
-      className="chart"
-    >
-      <XAxis dataKey="name" />
-      <Tooltip />
-      <CartesianGrid stroke="#f5f5f5" />
-      <Line type="monotone" dataKey="uv" stroke="#ff7300" yAxisId={0} className="line"/>
-      <Line type="monotone" dataKey="pv" stroke="#387908" yAxisId={1} className="line"/>
-      <YAxis dataKey="uv" />
-      <Tooltip />
-      <CartesianGrid stroke="#f5f5f5" />
-      <Line type="monotone" dataKey="uv" stroke="#ff7300" yAxisId={0} />
-      <Line type="monotone" dataKey="pv" stroke="#387908" yAxisId={1} />
-    </LineChart>
+    <Navbar bg="light" expand="lg" expanded={expanded}>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleToggle} />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="flex-column">
+          <LinkContainer to="/" exact>
+            <Nav.Link as={NavLink} to="/" activeClassName="active">
+              <FaHome className="mr-2" /> Home
+            </Nav.Link>
+          </LinkContainer>
+
+          <NavDropdown title="Settings" id="basic-nav-dropdown">
+            <LinkContainer to="/settings/general">
+              <NavDropdown.Item as={NavLink} to="/settings/general" activeClassName="active">
+                General
+              </NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to="/settings/account">
+              <NavDropdown.Item as={NavLink} to="/settings/account" activeClassName="active">
+                Account
+              </NavDropdown.Item>
+            </LinkContainer>
+          </NavDropdown>
+
+          <LinkContainer to="/logout">
+            <Nav.Link as={NavLink} to="/logout" activeClassName="active">
+              <FaSignOutAlt className="mr-2" /> Logout
+            </Nav.Link>
+          </LinkContainer>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
-}
+};
 
 export default Demo;

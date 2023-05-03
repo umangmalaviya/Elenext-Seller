@@ -2,6 +2,14 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import "../Styles/LandingPage.css"
 import RightArrow from "../Images/right-arrow.svg"
+import Navbar from './Navbar';
+import Footer from './Footer';
+import RewardImg1 from '../Images/reward-img1.svg'
+import RewardImg2 from '../Images/reward-img2.svg'
+import RewardImg3 from '../Images/reward-img3.svg'
+import RewardImg4 from '../Images/reward-img4.svg'
+import logo from "../Images/logo.svg"
+import play from "../Images/play.svg"
 
 const LandingPage = () => {
     const [mobileNumber, setMobileNumber] = useState("");
@@ -23,6 +31,7 @@ const LandingPage = () => {
     };
     return (
         <>
+            <Navbar />
             {/* hero-section */}
             <section className='hero_section'>
                 <div className='container-fluid'>
@@ -75,41 +84,92 @@ const LandingPage = () => {
                     <h2>How it Process ?</h2>
                     <div className='process_inn'>
                         <div className='process_cnt'>
-                            <div className='process_info'>
-                                <img src={require('../Images/introduction-selling.png')} alt="" />
-                                <h3>Introduction to Selling on Elenext</h3>
-                                <p>Make your products available to crores of customers & businesses 24x7</p>
-                                <Link to="#">See More <img src={RightArrow} alt="right arrow" /></Link>
-                            </div>
+                            {/* <div className='process_info'> */}
+                            <img src={require('../Images/introduction-selling.png')} alt="" className='process_img' />
+                            <h3>Introduction to Selling on Elenext</h3>
+                            <p>Make your products available to crores of customers & businesses 24x7</p>
+                            <Link to="#" className='seemore_btn'>See More <img src={RightArrow} alt="right arrow" /></Link>
+                            {/* </div> */}
                         </div>
                         <div className='process_cnt'>
-                            <div className='process_info'>
-                                <img src={require('../Images/introduction-selling.png')} alt="" />
-                                <h3>Seller fee & Pricing</h3>
-                                <p>Learn about the dashboard to create your seller account and manage your business</p>
-                                <Link to="#">See More <img src={RightArrow} alt="right arrow" /></Link>
-                            </div>
+                            {/* <div className='process_info'> */}
+                            <img src={require('../Images/fee-pricing.png')} alt="" className='process_img' />
+                            <h3>Seller fee & Pricing</h3>
+                            <p>Learn about the dashboard to create your seller account and manage your business</p>
+                            <Link to="#" className='seemore_btn'>See More <img src={RightArrow} alt="right arrow" /></Link>
+                            {/* </div> */}
                         </div>
                         <div className='process_cnt'>
-                            <div className='process_info'>
-                                <img src={require('../Images/introduction-selling.png')} alt="" />
-                                <h3>Why Elenext looks at suppliers ?</h3>
-                                <p>All the benefits that come with selling on Elenext are designed to help you sell more, and make it easier to grow your business.</p>
-                                <Link to="#">See More <img src={RightArrow} alt="right arrow" /></Link>
-                            </div>
+                            {/* <div className='process_info'> */}
+                            <img src={require('../Images/looks-suppliers .png')} alt="" className='process_img' />
+                            <h3>Why Elenext looks at suppliers ?</h3>
+                            <p>All the benefits that come with selling on Elenext are designed to help you sell more, and make it easier to grow your business.</p>
+                            <Link to="#" className='seemore_btn'>See More <img src={RightArrow} alt="right arrow" /></Link>
+                            {/* </div> */}
                         </div>
                         <div className='process_cnt'>
-                            <div className='process_info'>
-                                <img src={require('../Images/introduction-selling.png')} alt="" />
-                                <h3>Refer & earn rewards</h3>
-                                <p>Refer new sellers on Elenext.in & earn minimum rewards worth INR 2,000. Your friend earns a minimum reward worth INR 500, once they launch as a seller</p>
-                                <Link to="#">See More <img src={RightArrow} alt="right arrow" /></Link>
-                            </div>
+                            {/* <div className='process_info'> */}
+                            <img src={require('../Images/refer-earn.png')} alt="" className='process_img' />
+                            <h3>Refer & earn rewards</h3>
+                            <p>Refer new sellers on Elenext.in & earn minimum rewards worth INR 2,000. Your friend earns a minimum reward worth INR 500, once they launch as a seller</p>
+                            <Link to="#" className='seemore_btn'>See More <img src={RightArrow} alt="right arrow" /></Link>
+                            {/* </div> */}
                         </div>
                     </div>
                 </div>
             </section>
             {/* process-section */}
+
+            {/* reward-section */}
+            <section className='reward_sec'>
+                <div className='reward_inn'>
+                    <div className='reward_cnt'>
+                        <h2>Exclusive Supplier+ Rewards for the first 30 days</h2>
+                    </div>
+                    <div className='reward_info'>
+                        <div className='reward_info_fir reward_info_cnt'>
+                            <div className='reward_info_box'>
+                                <img src={RewardImg1} alt="reward img" />
+                                <h3>Free catalog visibility of ₹1200</h3>
+                                <p>Run advertisements for your catalogs to increase the visibility of your products and get more orders</p>
+                            </div>
+                            <div className='reward_info_box'>
+                                <img src={RewardImg2} alt="reward img" />
+                                <h3>Free Return Shipping</h3>
+                                <p>Send out your orders stress-free with zero fees on return shipping for the first month</p>
+                            </div>
+                        </div>
+                        <div className='reward_info_sec reward_info_cnt'>
+                            <div className='reward_info_box'>
+                                <img src={RewardImg3} alt="reward img" />
+                                <h3>Dedicated Catalog Manager</h3>
+                                <p>Clear all your cataloging doubts like how to upload catalogs, correct quality check errors and more</p>
+                            </div>
+                            <div className='reward_info_box'>
+                                <img src={RewardImg4} alt="reward img" />
+                                <h3>No Order Cancellation Charges</h3>
+                                <p>Cancel orders that you can’t fulfil for unforeseen reasons without worrying about penalties</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/* reward-section */}
+
+            {/* learning_hub */}
+            <section className='learning_hub'>
+                <div className='container-fluid'>
+                    <div className='learning_inn'>
+                        <div className='learning_cnt'>
+                            <img src={logo} alt="logo" />
+                            <h2>Learn how to sell and grow your business on Elenext</h2>
+                        </div>
+                        <Link to="#" className='learning_hub_btn'><img src={play} alt="play" />Visit Learning Hub</Link>
+                    </div>
+                </div>
+            </section>
+            {/* learning_hub */}
+            <Footer />
         </>
     )
 }

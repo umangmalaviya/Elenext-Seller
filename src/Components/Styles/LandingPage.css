@@ -131,6 +131,10 @@
 
 /* achievment_section */
 /* process-section */
+.process_section {
+    padding-bottom: 150px;
+}
+
 .process_section h2 {
     font-style: normal;
     font-weight: 600;
@@ -154,14 +158,194 @@
     box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     padding: 20px;
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.process_info {
-    height: 100%;
+.process_cnt .process_img {
+    width: 50px;
+    margin-bottom: 35px;
+}
+
+.process_cnt h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #232F3E;
+    margin-bottom: 18px;
+}
+
+.process_cnt p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #6C7778;
+    margin-bottom: 32px;
+}
+
+.process_cnt a {
+    background: #FEA700;
+    border-radius: 5px;
+    width: 180px;
+    height: 40px;
+    padding: 5px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.process_cnt a img {
+    width: 18px;
+    margin-left: 5px;
 }
 
 /* process-section */
+/* reward-section */
+.reward_sec {
+    background: rgba(231, 238, 255, 0.4);
+    padding: 20px 0;
+}
+
+.reward_inn {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.reward_cnt {
+    width: 100%;
+    max-width: 400px;
+}
+
+.reward_cnt h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+    color: #111111;
+}
+
+.reward_info {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    max-width: 640px;
+}
+
+.reward_info_cnt {
+    width: 100%;
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.reward_info_fir {
+    margin-top: -60px;
+}
+
+.reward_info_sec {
+    margin-bottom: -80px;
+}
+
+.reward_info_box {
+    padding: 32px 25px;
+    background: #FFFFFF;
+    border: 1px solid #F0EFFC;
+    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.04);
+    border-radius: 20px;
+}
+
+.reward_info_box img {
+    margin-bottom: 15px;
+}
+
+.reward_info_box h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.reward_info_box p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #3B3B3B;
+}
+
+/* reward-section */
+/* learning_hub */
+.learning_hub {
+    padding: 50px 0;
+    margin: 150px 0;
+    background: #F6F7F9;
+}
+
+.learning_hub .container-fluid {
+    max-width: 1030px;
+}
+
+.learning_inn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.learning_cnt {
+    width: 100%;
+    max-width: 377px;
+}
+
+.learning_cnt img {
+    margin-bottom: 30px;
+}
+
+.learning_cnt h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+    color: #111111;
+}
+
+.learning_inn a.learning_hub_btn {
+    border: 1px solid #FEA700;
+    border-radius: 5px;
+    width: 260px;
+    height: 64px;
+    padding: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #FEA700;
+    text-align: center;
+}
+
+.learning_inn a.learning_hub_btn img {
+    margin-right: 10px;
+    width: 42px;
+}
+
+/* learning_hub */
 
 @media screen and (max-width: 1300px) {
 
@@ -202,6 +386,45 @@
     }
 
     /* achievment_section */
+    /* process-section */
+    .process_section h2 {
+        font-size: 27px;
+        line-height: 33px;
+    }
+
+    .process_cnt {
+        max-width: 270px;
+        padding: 25px 15px;
+    }
+
+    .process_cnt h3 {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 16px;
+    }
+
+    .process_cnt p {
+        font-size: 15px;
+        line-height: 23px;
+        margin-bottom: 28px;
+    }
+
+    .process_cnt a {
+        width: 160px;
+        font-size: 15px;
+        line-height: 29px;
+    }
+
+    .process_cnt .process_img {
+        width: 38px;
+        margin-bottom: 28px;
+    }
+
+    .process_inn {
+        flex-flow: row wrap;
+    }
+
+    /* process-section */
 }
 
 @media screen and (max-width: 991px) {
@@ -250,6 +473,40 @@
     }
 
     /* achievment_section */
+    /* process-section */
+    .process_section {
+        padding-bottom: 80px;
+    }
+
+    /* process-section */
+    /* reward-section */
+    .reward_sec {
+        padding: 50px 0;
+    }
+
+    .reward_inn {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .reward_cnt h2 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .reward_cnt {
+        max-width: 320px;
+        text-align: center;
+    }
+
+    .reward_info_cnt {
+        margin: 0 !important;
+    }
+
+    /* reward-section */
+    /* learning_hub */
+    
+    /* learning_hub */
 }
 
 @media screen and (max-width: 767px) {
@@ -310,4 +567,46 @@
     }
 
     /* achievment_section */
+    /* reward-section */
+    .reward_cnt h2 {
+        font-size: 19px;
+        line-height: 29px;
+    }
+
+    .reward_cnt {
+        max-width: 280px;
+    }
+
+    .reward_info_cnt {
+        max-width: 240px;
+        gap: 20px;
+    }
+
+    .reward_info {
+        max-width: 530px;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .reward_info_box {
+        padding: 25px 18px;
+    }
+
+    .reward_info_box img {
+        margin-bottom: 12px;
+        width: 33px;
+    }
+
+    .reward_info_box h3 {
+        font-size: 16px;
+        line-height: 23px;
+        margin-bottom: 10px;
+    }
+
+    .reward_info_box p {
+        font-size: 13px;
+        line-height: 21px;
+    }
+
+    /* reward-section */
 }
