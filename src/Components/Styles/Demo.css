@@ -1,4 +1,4 @@
-.active {
+.sidenavbar .navbar-nav .nav-link.active {
     color: #FEA700 !important;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 110.41%);
     /* background: url(../Images/active-inve.png); */
@@ -32,11 +32,11 @@
     padding: 25px;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link {
-    color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
-    padding: 10px 25px;
+.sidenavbar .navbar-nav .nav-link {
+    color: #FFFFFF !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 10px !important;
+    padding: 10px 25px !important;
 }
