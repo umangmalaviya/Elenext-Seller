@@ -1,7 +1,7 @@
 .active {
     color: #FEA700 !important;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 110.41%);
-    background: url(../Images/active-inve.png);
+    /* background: url(../Images/active-inve.png); */
 }
 
 .sidenavbar .navbar-nav .dropdown-menu {
