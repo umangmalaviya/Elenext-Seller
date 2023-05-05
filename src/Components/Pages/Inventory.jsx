@@ -4,7 +4,7 @@ import { LinkContainer } from "react-router-bootstrap";
 import { NavLink } from "react-router-dom";
 import { FaHome, FaSignOutAlt } from "react-icons/fa";
 import { MdInventory } from "react-icons/md";
-import "../Styles/Demo.css"
+import "../Styles/Inventory.css"
 import logo from "../Images/new-seller-logo.svg"
 
 const Inventory = () => {
@@ -23,7 +23,7 @@ const Inventory = () => {
                         <Nav className="flex-column">
                             <img src={logo} alt="logo" className="logo" />
                             <LinkContainer to="/Home" exact>
-                                <Nav.Link as={NavLink} to="/Inventory" exact ativeclassname="active">
+                                <Nav.Link as={NavLink} to="/home" exact ativeclassname="active">
                                     <FaHome className="mr-2" size='25px' /> Home
                                 </Nav.Link>
                             </LinkContainer>
@@ -64,6 +64,28 @@ const Inventory = () => {
                         </div>
                     </div>
                     <hr />
+                    <div className="inventory_sec">
+                        <div className="container-fluid">
+                            <div className="inventory_parts">
+                                <div className="inventory_parts_inn all_inventory">
+                                    <h3>All Inventory</h3>
+                                    <h4><span>484</span> SKUS</h4>
+                                </div>
+                                <div className="inventory_parts_inn lows_inventory">
+                                    <h3>Low Stock</h3>
+                                    <h4><span>0</span> SKUS</h4>
+                                </div>
+                                <div className="inventory_parts_inn outofs_inventory">
+                                    <h3>Out of Stock</h3>
+                                    <h4><span>1</span> SKUS</h4>
+                                </div>
+                                <div className="inventory_parts_inn recom_inventory">
+                                    <h3>Recommendations</h3>
+                                    <h4><span>0</span> SKUS</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
