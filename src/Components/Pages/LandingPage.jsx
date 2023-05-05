@@ -10,6 +10,7 @@ import RewardImg3 from '../Images/reward-img3.svg'
 import RewardImg4 from '../Images/reward-img4.svg'
 import logo from "../Images/logo.svg"
 import play from "../Images/play.svg"
+import EmailLogo from "../Images/email.svg"
 
 const LandingPage = () => {
     const [showMore, setShowMore] = useState(false);
@@ -17,6 +18,7 @@ const LandingPage = () => {
     const handleSeeMore = () => {
         setShowMore(true);
     };
+
     const [mobileNumber, setMobileNumber] = useState("");
     const [mobileError, setMobileError] = useState("");
     const handleMobileNumberChange = (e) => {
@@ -243,6 +245,24 @@ const LandingPage = () => {
                 </div>
             </section>
             {/* category-section */}
+
+            {/* support-section */}
+            <section className='support_sec'>
+                <div className='container-fluid'>
+                    <div className='support_inn'>
+                        <h2>Elenext Supplier Support Available 24/7</h2>
+                        <div className='support_info'>
+                            <p>Elenext supplier support is available to solve all your doubts and issues before and after
+                                you start your online selling business.</p>
+                            <div className='support_cnt'>
+                                <img src={EmailLogo} alt="email logo" />
+                                <h4>You can reach out to <span>sell@elenext.com</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/* support-section */}
 
             <Footer />
         </>

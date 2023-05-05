@@ -13,6 +13,7 @@ import ShowFillDetails from "./Components/Pages/ShowFillDetails";
 import LandingPage from "./Components/Pages/LandingPage";
 import Home from "./Components/Pages/Home";
 import Inventory from "./Components/Pages/Inventory";
+import LandingIntro from "./Components/Pages/LandingIntro";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/LandingIntro" element={<LandingIntro />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/OtpFill" element={<OtpFill />} />
