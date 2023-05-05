@@ -14,6 +14,7 @@ import LandingPage from "./Components/Pages/LandingPage";
 import Home from "./Components/Pages/Home";
 import Inventory from "./Components/Pages/Inventory";
 import LandingIntro from "./Components/Pages/LandingIntro";
+import LandingBanefit from "./Components/Pages/LandingBanefit";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/LandingIntro" element={<LandingIntro />} />
+          <Route path="/LandingBanefit" element={<LandingBanefit />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/OtpFill" element={<OtpFill />} />

@@ -1,9 +1,14 @@
 import React from 'react'
 import BenefitImg from "../Images/Benefit-img.svg"
+import "../Styles/LandingBanefit.css"
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 const LandingBanefit = () => {
     return (
         <>
+            <Navbar />
+
             <div className='banefits_sec'>
                 <div className='container-fluid'>
                     <h2>Benefits</h2>
@@ -32,6 +37,8 @@ const LandingBanefit = () => {
                     </div>
                 </div>
             </div>
+
+            <Footer />
         </>
     )
 }
