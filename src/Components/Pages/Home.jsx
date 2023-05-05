@@ -83,99 +83,125 @@ const Home = () => {
                         </div>
                     </div>
                     <hr />
-                    <div className="middle-sidenavbar-inner">
-                        <div className="chart">
-                            <Chart
-                                options={state.options}
-                                series={state.series}
-                                type="area"
-                                width="800"
-                            />
-                        </div>
-                        <div className="right-miidle-sidebar-inner">
-                            <div className="up-corner">
-                                <div className="new-order">
-                                    <div className="qwedsa">
-                                        <img src={require("../Images/green-pipe.png")} alt=" " />
-                                        <div className="new-order-name">
-                                            <p>New Orders</p>
-                                            <span>2520.22</span>
-                                        </div>
-                                        <div className="new-order-icon">
-                                            <img src={require("../Images/new-order.png")} alt=" " />
-                                        </div>
-                                    </div>
-                                    <div className="plus">
-                                        <span>↑+6.5%</span>
-                                        <p>Since last week</p>
-                                    </div>
-                                </div>
-                                <div className="new-order">
-                                    <div className="qwedsa">
-                                        <img src={require("../Images/red-pipe.png")} alt=" " />
-                                        <div className="new-order-name">
-                                            <p>Active Listings</p>
-                                            <span>25</span>
-                                        </div>
-                                        <div className="new-order-icon1">
-                                            <img src={require("../Images/active-listing.png")} alt=" " />
-                                        </div>
-                                    </div>
-                                    <div className="plus1">
-                                        <span>&darr;</span><span>+6.5%</span>
-                                        <p>Since last week</p>
-                                    </div>
-                                </div>
+                    <div className="seller-container">
+                        <div className="middle-sidenavbar-inner">
+                            <div className="chart">
+                                <Chart
+                                    options={state.options}
+                                    series={state.series}
+                                    type="area"
+                                    width="900"
+                                    height="450"
+                                />
                             </div>
-                            <div className="down-corner">
-                                <div className="new-order">
-                                    <div className="qwedsa">
-                                        <img src={require("../Images/green-pipe.png")} alt=" " />
-                                        <div className="new-order-name">
-                                            <p>Units Sold</p>
-                                            <span>02</span>
+                            <div className="right-miidle-sidebar-inner">
+                                <div className="up-corner">
+                                    <div className="new-order">
+                                        <div className="qwedsa">
+                                            <img src={require("../Images/green-pipe.png")} alt=" " />
+                                            <div className="new-order-name">
+                                                <p>New Orders</p>
+                                                <span>2520.22</span>
+                                            </div>
+                                            <div className="new-order-icon">
+                                                <img src={require("../Images/new-order.png")} alt=" " />
+                                            </div>
                                         </div>
-                                        <div className="new-order-icon">
-                                            <img src={require("../Images/units-sold.png")} alt=" " />
+                                        <div className="plus">
+                                            <span>↑+6.5%</span>
+                                            <p>Since last week</p>
                                         </div>
                                     </div>
-                                    <div className="plus">
-                                        <span>↑+7.5%</span>
-                                        <p>Since last week</p>
+                                    <div className="new-order">
+                                        <div className="qwedsa">
+                                            <img src={require("../Images/red-pipe.png")} alt=" " />
+                                            <div className="new-order-name">
+                                                <p>Active Listings</p>
+                                                <span>25</span>
+                                            </div>
+                                            <div className="new-order-icon1">
+                                                <img src={require("../Images/active-listing.png")} alt=" " />
+                                            </div>
+                                        </div>
+                                        <div className="plus1">
+                                            <span>&darr;</span><span>+6.5%</span>
+                                            <p>Since last week</p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="new-order">
-                                    <div className="qwedsa">
-                                        <img src={require("../Images/green-pipe.png")} alt=" " />
-                                        <div className="new-order-name">
-                                            <p>Sales</p>
-                                            <span>11,555</span>
+                                <div className="down-corner">
+                                    <div className="new-order">
+                                        <div className="qwedsa">
+                                            <img src={require("../Images/green-pipe.png")} alt=" " />
+                                            <div className="new-order-name">
+                                                <p>Units Sold</p>
+                                                <span>02</span>
+                                            </div>
+                                            <div className="new-order-icon">
+                                                <img src={require("../Images/units-sold.png")} alt=" " />
+                                            </div>
                                         </div>
-                                        <div className="new-order-icon">
-                                            <img src={require("../Images/sales.png")} alt=" " />
+                                        <div className="plus">
+                                            <span>↑+7.5%</span>
+                                            <p>Since last week</p>
                                         </div>
                                     </div>
-                                    <div className="plus">
-                                        <span>↑+10.5%</span>
-                                        <p>Since last week</p>
+                                    <div className="new-order">
+                                        <div className="qwedsa">
+                                            <img src={require("../Images/green-pipe.png")} alt=" " />
+                                            <div className="new-order-name">
+                                                <p>Sales</p>
+                                                <span>11,555</span>
+                                            </div>
+                                            <div className="new-order-icon">
+                                                <img src={require("../Images/sales.png")} alt=" " />
+                                            </div>
+                                        </div>
+                                        <div className="plus">
+                                            <span>↑+10.5%</span>
+                                            <p>Since last week</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div className="overview">
-                                <p className="over">Overview</p>
-                                <div className="grid-container">
-                                    <div className="grid-item item1">1</div>
-                                    <div className="grid-item item2">2</div>
-                                    <div className="grid-item item3">3</div>
-                                    <div className="grid-item item4">4</div>
-                                    <div className="grid-item item5">5</div>
+                                <div className="overview">
+                                    <p className="over">Overview</p>
+                                    <div className="row">
+                                        <div className="col-3 grid-item item1">
+                                            <div className="grid_number">59</div>
+                                            <div className="grid_txt">Adidas</div>
+                                            <div className="grid_txt">Air Max</div>
+                                        </div>
+                                        <div className="col-9">
+                                            <div className="row">
+                                                <div className="col-7 grid-item item4">
+                                                    <div className="grid_number">42</div>
+                                                    <div className="grid_txt">Nike Tanjun</div>
+                                                </div>
+                                                <div className="col-5 grid-item item2">
+                                                    <div className="grid_number">4</div>
+                                                    <div className="grid_txt">Vans Word</div>
+                                                </div>
+                                            </div>
+                                            <div className="row">
+                                                <div className="col-6 grid-item item5">
+                                                    <div className="grid_number">42</div>
+                                                    <div className="grid_txt">Nike Tanjun</div>
+                                                </div>
+                                                <div className="col-6 grid-item item3">
+                                                    <div className="grid_number">18</div>
+                                                    <div className="grid_txt">Nick Air Max 270</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </>
     );
 };
