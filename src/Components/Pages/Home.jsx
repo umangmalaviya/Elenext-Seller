@@ -4,7 +4,7 @@ import { LinkContainer } from "react-router-bootstrap";
 import { NavLink } from "react-router-dom";
 import { FaHome, FaSignOutAlt } from "react-icons/fa";
 import { MdInventory } from "react-icons/md";
-import "../Styles/Demo.css"
+import "../Styles/Home.css"
 import logo from "../Images/new-seller-logo.svg"
 import Chart from "react-apexcharts";
 
@@ -91,7 +91,7 @@ const Home = () => {
                                     series={state.series}
                                     type="area"
                                     width="900"
-                                    height="450"
+                                    height="550"
                                 />
                             </div>
                             <div className="right-miidle-sidebar-inner">
@@ -197,6 +197,10 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+
+                        <div className="section_4">
+
                         </div>
                     </div>
                 </div>

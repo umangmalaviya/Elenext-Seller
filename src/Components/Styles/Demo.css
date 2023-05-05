@@ -105,8 +105,8 @@
 .chart {
     box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
-    padding: 10px;
-    height: 500px;
+    padding: 50px 10px;
+    height: 657px;
 }
 
 .seller-container {
@@ -117,7 +117,7 @@
 }
 
 .middle-sidenavbar-inner {
-    /* margin: 25px auto; */
+    margin: 50px auto;
     display: flex;
     gap: 25px;
     justify-content: space-between;
@@ -283,3 +283,12 @@
     border-radius: 5px;
     margin-top: 40px;
 }
+
+
+/* section 4  */
+
+/* .section_4{
+
+} */
+
+/* section 4  */
