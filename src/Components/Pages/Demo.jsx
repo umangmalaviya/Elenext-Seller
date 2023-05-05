@@ -1,32 +1,18 @@
-import React from 'react';
-import { Line } from 'react-chartjs-2';
-
-const data = {
-  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-  datasets: [
-    {
-      label: 'Sales',
-      data: [12, 19, 3, 5, 2, 3, 9],
-      fill: false,
-      borderColor: 'rgb(75, 192, 192)',
-      tension: 0.1
-    }
-  ]
-};
-
-const options = {
-  scales: {
-    yAxes: [
-      {
-        ticks: {
-          beginAtZero: true
-        }
-      }
-    ]
-  }
-};
+import React, { useState } from "react";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
+import { NavLink, useLocation } from "react-router-dom";
+import { FaHome, FaCog, FaSignOutAlt } from "react-icons/fa";
+import "../Styles/Demo.css"
 
 const Demo = () => {
+  const [expanded, setExpanded] = useState(false);
+  const location = useLocation();
+
+  const handleToggle = () => {
+    setExpanded(!expanded);
+  };
+
   return (
     <div>
       <Line data={data} options={options} />

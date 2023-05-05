@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
-import { NavLink, useLocation } from "react-router-dom";
-import { FaHome, FaCog, FaSignOutAlt } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
+import { FaHome, FaSignOutAlt } from "react-icons/fa";
 import { MdInventory } from "react-icons/md";
 import "../Styles/Demo.css"
 import logo from "../Images/new-seller-logo.svg"
 
 const Inventory = () => {
     const [expanded, setExpanded] = useState(false);
-    const location = useLocation();
 
     const handleToggle = () => {
         setExpanded(!expanded);
