@@ -1,0 +1,37 @@
+.inventory_sec {
+    padding-top: 60px;
+}
+
+.inventory_parts {
+    display: flex;
+}
+
+.inventory_parts_inn {
+    padding: 10px 20px;
+    background: #F5F5F5;
+    border: 1px solid #000000;
+}
+
+.inventory_parts_inn h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.inventory_parts_inn h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.inventory_parts_inn h4 span {
+    display: inline-block;
+}
+
+.inventory_parts_inn.recom_inventory {
+    margin-left: 30px;
+}
