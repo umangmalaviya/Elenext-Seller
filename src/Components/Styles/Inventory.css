@@ -35,3 +35,73 @@
 .inventory_parts_inn.recom_inventory {
     margin-left: 30px;
 }
+
+.filter_part {
+    padding: 30px 0;
+}
+
+.filter_stock {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}
+
+.stockfile_down {
+    display: flex;
+    gap: 30px;
+}
+
+.stockfile_down select {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    padding: 7px 40px 7px 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 25px;
+    color: #000000;
+    outline: none;
+    appearance: none;
+    background: url(../Images/down-arrow.png) no-repeat;
+    background-position: right 10px center;
+}
+
+.stockfile_down .bulckstock_btn {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 25px;
+    color: #000000;
+    padding: 7px;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    outline: none;
+    background: #FEA700;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.filter_manage {
+    display: flex;
+}
+
+.filter_manage a {
+    width: 80px;
+    height: 40px;
+    padding: 7px;
+    text-align: center;
+}
+
+.filter_manage a.filter_show {
+    background: #F0F2F1;
+}
+
+.filter_manage a.filter_menu {
+    background: #FEA700;
+}

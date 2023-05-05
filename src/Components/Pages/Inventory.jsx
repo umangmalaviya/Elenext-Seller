@@ -6,6 +6,9 @@ import { FaHome, FaSignOutAlt } from "react-icons/fa";
 import { MdInventory } from "react-icons/md";
 import "../Styles/Inventory.css"
 import logo from "../Images/new-seller-logo.svg"
+import { Link } from 'react-router-dom'
+import FilterIcon from "../Images/filter-icon.svg"
+import FilterMenu from "../Images/filter-menu.svg"
 
 const Inventory = () => {
     const [expanded, setExpanded] = useState(false);
@@ -82,6 +85,25 @@ const Inventory = () => {
                                 <div className="inventory_parts_inn recom_inventory">
                                     <h3>Recommendations</h3>
                                     <h4><span>0</span> SKUS</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="filter_part">
+                        <div className="container-fluid">
+                            <div className="filter_stock">
+                                <div className="stockfile_down">
+                                    <select id="dropdown">
+                                        <option value="">Download Bulk Stock File</option>
+                                        <option value="option1">Option 1</option>
+                                        <option value="option2">Option 2</option>
+                                        <option value="option3">Option 3</option>
+                                    </select>
+                                    <button className="bulckstock_btn">Update Bulk Stock</button>
+                                </div>
+                                <div className="filter_manage">
+                                    <Link to="#" className="filter_show"><img src={FilterIcon} alt="filter" /></Link>
+                                    <Link to="#" className="filter_menu"><img src={FilterMenu} alt="filter menu" /></Link>
                                 </div>
                             </div>
                         </div>
