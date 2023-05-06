@@ -4,9 +4,15 @@ import { LinkContainer } from "react-router-bootstrap";
 import { NavLink } from "react-router-dom";
 import { FaHome, FaSignOutAlt } from "react-icons/fa";
 import { MdInventory } from "react-icons/md";
+import Sidebar from "../Pages/Sidebar"
 import "../Styles/Home.css"
 import logo from "../Images/new-seller-logo.svg"
 import Chart from "react-apexcharts";
+import calender from "../Images/calender.svg"
+import s1 from "../Images/s1.svg"
+import s2 from "../Images/s2.svg"
+import s3 from "../Images/s3.svg"
+import big_sale from "../Images/big_sale.svg"
 
 const Home = () => {
     const [expanded, setExpanded] = useState(false);
@@ -69,7 +75,7 @@ const Home = () => {
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
-
+{/* <Sidebar/> */}
                 <div className="sidenavbar-head">
                     <div className="sidenavbar-head-inner">
                         <div className="left-sidenavbar-head">
@@ -90,8 +96,6 @@ const Home = () => {
                                     options={state.options}
                                     series={state.series}
                                     type="area"
-                                    width="900"
-                                    height="550"
                                 />
                             </div>
                             <div className="right-miidle-sidebar-inner">
@@ -198,10 +202,88 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
+                        <div className="sections">
+                            <div className="section_4">
+                                <button className="section_4_btn">Select Date <img src={calender} alt="calender" /> </button>
+                                <span>Todays - 17/12/2014</span>
 
-                        <div className="section_4">
+                                <div className="second_part_section_4">
+                                    <div className="sp_contante1">
+                                        <div className="sp_btn_1">
+                                            <h3>18</h3>
+                                            <p>Customers</p>
+                                        </div>
+                                        <div className="sp_txt">
+                                            <p>New:10</p>
+                                            <p>Repeat: 16</p>
+                                        </div>
+                                    </div>
+                                    {/* <img className="sp_img" src={forword} alt="forword" /> */}
+                                    <div className="sp_contante1">
+                                        <div className="sp_btn_1">
+                                            <h3>22</h3>
+                                            <p>Orders</p>
+                                        </div>
+                                        <div className="sp_txt">
+                                            <p>Repeat: 16</p>
+                                            <p>Average order</p>
+                                            <p>value: 16r</p>
+                                        </div>
+                                    </div>
+                                    {/* <img className="sp_img" src={forword} alt="forword" /> */}
+                                    <div className="sp_contante2">
+                                        <div className="sp_btn_2">
+                                            <h3>N198,555</h3>
+                                            <p>Revenue</p>
+                                        </div>
+                                        <div className="sp_txt">
+                                            <p>Subtotal:10</p>
+                                            <p>Shipping: 16</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="section_5">
+                                <div className="s5_header">
+                                    <div className="header1">Low stock alert</div>
+                                    <div className="header2">View all</div>
+                                </div>
+                                <div className="s5_content">
+                                    <img src={s1} alt="s1" className="s5_img" />
+                                    <div className="content_txt">
 
+                                        <div className="content_name">
+                                            Black Mamba Nike
+                                        </div>
+                                        <div className="content_number">3</div>
+                                    </div>
+                                </div>
+                                <div className="s5_content">
+                                    <img src={s2} alt="s2" className="s5_img" />
+                                    <div className="content_txt">
+
+                                        <div className="content_name">
+                                            Black Mamba Nike
+                                        </div>
+                                        <div className="content_number">1</div>
+                                    </div>
+                                </div>
+                                <div className="s5_content">
+                                    <img src={s3} alt="s3" className="s5_img" />
+                                    <div className="content_txt">
+
+                                        <div className="content_name">
+                                            Black Mamba Nike
+                                        </div>
+                                        <div className="content_number">1</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <div className="section_6">
+                            <img src={big_sale} alt="big_sale" className="s6_img" />
+                        </div>
+
                     </div>
                 </div>
             </div>
