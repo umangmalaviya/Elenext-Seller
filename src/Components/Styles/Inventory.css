@@ -1,18 +1,18 @@
-.inventory_sec {
-    padding-top: 60px;
+.inventory_main {
+    padding: 50px 0 80px;
 }
 
 .inventory_parts {
     display: flex;
 }
 
-.inventory_parts_inn {
+.inventory_parts button {
     padding: 10px 20px;
     background: #F5F5F5;
     border: 1px solid #000000;
 }
 
-.inventory_parts_inn h3 {
+.inventory_parts button h3 {
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -20,7 +20,7 @@
     color: #000000;
 }
 
-.inventory_parts_inn h4 {
+.inventory_parts button h4 {
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -28,11 +28,11 @@
     color: #000000;
 }
 
-.inventory_parts_inn h4 span {
+.inventory_parts button h4 span {
     display: inline-block;
 }
 
-.inventory_parts_inn.recom_inventory {
+.inventory_parts button:last-child {
     margin-left: 30px;
 }
 
@@ -104,4 +104,42 @@
 
 .filter_manage a.filter_menu {
     background: #FEA700;
+}
+
+.inventory_stock {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.inventory_stock thead th {
+    padding: 20px;
+    text-align: center;
+}
+
+.inventory_stock .inventory_item {
+    display: flex;
+    padding: 15px;
+    gap: 30px;
+    align-items: center;
+}
+
+.inventory_stock .inventory_item img {
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.15));
+}
+
+.inventory_item_info h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.inventory_item_info h4,
+.inventory_item_info h5 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #000000;
 }
