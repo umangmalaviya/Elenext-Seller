@@ -4,6 +4,7 @@ import React from "react";
 // import { NavLink, useLocation } from "react-router-dom";
 // import { FaHome, FaCog, FaSignOutAlt } from "react-icons/fa";
 import "../Styles/Demo.css"
+import Sidebar from "./Sidebar";
 
 const Demo = () => {
   // const [expanded, setExpanded] = useState(false);
@@ -15,7 +16,7 @@ const Demo = () => {
 
   return (
     <>
-      {/* <Line data={data} options={options} /> */}
+      <Sidebar />
     </>
   );
 };

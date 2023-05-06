@@ -15,6 +15,13 @@ import Home from "./Components/Pages/Home";
 import Inventory from "./Components/Pages/Inventory";
 import LandingIntro from "./Components/Pages/LandingIntro";
 import LandingBanefit from "./Components/Pages/LandingBanefit";
+import Advertisement from "./Components/Pages/Advertisement";
+import Help from "./Components/Pages/Help";
+import LogOut from "./Components/Pages/LogOut";
+import Price from "./Components/Pages/Price";
+import Promotions from "./Components/Pages/Promotions";
+import ReturnProduct from "./Components/Pages/ReturnProduct";
+import Settings from "./Components/Pages/Settings";
 
 
 function App() {
@@ -39,6 +46,13 @@ function App() {
 
           <Route path="/Home" element={<Home />} />
           <Route path="/Inventory" element={<Inventory />} />
+          <Route path="/Advertisement" element={<Advertisement />} />  
+          <Route path="/Help" element={<Help />} />  
+          <Route path="/LogOut" element={<LogOut />} />  
+          <Route path="/Price" element={<Price />} />  
+          <Route path="/Promotions" element={<Promotions />} />  
+          <Route path="/ReturnProduct" element={<ReturnProduct />} />  
+          <Route path="/Settings" element={<Settings />} />  
         </Routes>
       </BrowserRouter>
     </>
