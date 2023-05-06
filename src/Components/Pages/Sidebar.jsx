@@ -27,7 +27,7 @@ const Sidebar = () => {
                         <img src={logo} alt="logo" className="logo" />
                         <div className="upside-navbar">
                             <LinkContainer to="/Home" exact="true">
-                                <Nav.Link as={NavLink} to="/Inventory" exact="true" ativeclassname="active">
+                                <Nav.Link as={NavLink} to="/Home" exact="true" ativeclassname="active">
                                     <FaHome className="mr-2" size='25px' /> Home
                                 </Nav.Link>
                             </LinkContainer>
