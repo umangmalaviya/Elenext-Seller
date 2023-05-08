@@ -1,0 +1,51 @@
+.anl-container {
+    width: 100%;
+    max-width: 1650px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.anl_search_header {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+
+
+
+.search_box {
+    padding: 10px 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    width: 100%;
+    position: relative;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: capitalize;
+
+    /* background-position: right 20px center; */
+}
+.anl_search_input {
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+}
+
+.anl_search_input a {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+}
+
+
+.search_box::placeholder {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #979797;
+}

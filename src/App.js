@@ -22,6 +22,8 @@ import Price from "./Components/Pages/Price";
 import Promotions from "./Components/Pages/Promotions";
 import ReturnProduct from "./Components/Pages/ReturnProduct";
 import Settings from "./Components/Pages/Settings";
+import AddNewListing from "./Components/Pages/AddNewListing";
+import SearchProduct from "./Components/Pages/SearchProduct";
 
 
 function App() {
@@ -52,7 +54,9 @@ function App() {
           <Route path="/Price" element={<Price />} />  
           <Route path="/Promotions" element={<Promotions />} />  
           <Route path="/ReturnProduct" element={<ReturnProduct />} />  
-          <Route path="/Settings" element={<Settings />} />  
+          <Route path="/Settings" element={<Settings />} />
+          <Route path="/addnewlisting" element={<AddNewListing />} />
+          <Route path="/searchproduct" element={<SearchProduct/>} />  
         </Routes>
       </BrowserRouter>
     </>
