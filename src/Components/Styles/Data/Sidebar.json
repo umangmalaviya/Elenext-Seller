@@ -1,0 +1,63 @@
+[
+    {
+        "title": "Home",
+        "icon": "bi-house-fill",
+        "path":"/Home"
+    },
+    {
+        "title": "Inventory",
+        "icon": "bi-inboxes-fill",
+        "path":"/Inventory"
+    },
+    {
+        "title": "Return Product",
+        "icon": "bi-person-fill",
+        "childrens": [
+            {
+                "title": "Profile",
+                "path": "/profile"
+            },
+            {
+                "title": "Settings",
+                "childrens": [
+                    {
+                        "title": "Account",
+                        "path": "/settings/account"
+                    },
+                    {
+                        "title": "Notifications",
+                        "path": "/settings/notifications"
+                    }
+                ]
+            },
+            {
+                "title": "Logout",
+                "path": "/logout"
+            }
+        ]
+    },
+    {
+        "title": "Return Product",
+        "icon": "bi-view-list",
+        "childrens": [
+            {
+                "title": "Search",
+                "path": "/search"
+            },
+            {
+                "title": "History",
+                "path": "/history"   
+            }
+        ]
+    },
+    {
+        "title": "Support",
+        "icon": "bi-question-circle-fill",
+        "path": "/support"
+    },
+    {
+        "title": "Report Bug",
+        "icon": "bi-bug",
+        "path": "/report-bug"
+    }
+]
