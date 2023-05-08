@@ -231,21 +231,6 @@ const Inventory = () => {
                                             <td>2</td>
                                             <td>5</td>
                                         </tr>
-                                        <tr>
-                                            <td>
-                                                <div className="inventory_item">
-                                                    <img src={require('../Images/inventory-img.png')} alt="inventory img" />
-                                                    <div className="inventory_item_info">
-                                                        <h3>FAB 2 FASHION Anarkali Gown</h3>
-                                                        <h4>SKU ID: F2F-G1002-Blue</h4>
-                                                        <h5>FSN ID: GWNFN3TFCEQ4DFHF</h5>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>10</td>
-                                            <td>2</td>
-                                            <td>5</td>
-                                        </tr>
                                     </tbody>
                                 </table>
                             )}

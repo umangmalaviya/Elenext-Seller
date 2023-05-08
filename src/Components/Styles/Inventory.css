@@ -109,16 +109,27 @@
 .inventory_stock {
     border-collapse: collapse;
     width: 100%;
+    border: 1px solid #000000;
 }
 
 .inventory_stock thead th {
     padding: 20px;
     text-align: center;
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+}
+
+.inventory_stock tbody td {
+    border-right: 1px solid #000000;
+}
+
+.inventory_stock tbody td:not(:first-child) {
+    text-align: center;
 }
 
 .inventory_stock .inventory_item {
     display: flex;
-    padding: 15px;
+    padding: 15px 25px;
     gap: 30px;
     align-items: center;
 }
