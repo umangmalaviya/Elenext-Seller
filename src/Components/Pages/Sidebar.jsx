@@ -1,23 +1,7 @@
 import React, { useState } from "react";
-import {
-    FaTh,
-    FaBars,
-    FaUserAlt,
-    FaRegChartBar,
-    FaCommentAlt,
-    FaShoppingBag,
-    FaThList,
-} from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { FaBars } from "react-icons/fa";
 import "../Styles/Demo.css";
 import logo from "../Images/seller-logo.svg";
-import { RiInboxArchiveFill } from "react-icons/ri";
-import { CiDiscount1 } from "react-icons/ci";
-import { TbSpeakerphone, TbLogout } from "react-icons/tb";
-import { TfiHeadphoneAlt } from "react-icons/tfi";
-import { FaHome, FaPercentage } from "react-icons/fa";
-import { RiCustomerServiceFill } from "react-icons/ri";
-import { HiCurrencyDollar, HiSpeakerphone } from "react-icons/hi";
 
 // const Demo = () => {
 //     const [isOpen, setIsOpen] = useState(true);
@@ -69,10 +53,6 @@ import { HiCurrencyDollar, HiSpeakerphone } from "react-icons/hi";
 
 // export default Demo;
 
-
-
-
-
 import SidebarItem from "../Pages/SidebarItem"
 import items from "../Styles/Data/Sidebar.json"
 import "../Styles/Demo.css";
@@ -104,7 +84,9 @@ export default function Sidebar() {
                     <FaBars onClick={toggle} />
                 </div>
             </div>
-            {items.map((item, index) => <SidebarItem key={index} item={item} />)}
+            <div>
+                {items.map((item, index) => <SidebarItem key={index} item={item} />)}
+            </div>
         </div>
     )
 }

@@ -2,13 +2,17 @@
     {
         "title": "Home",
         "icon": "bi-house-fill",
+        "color":"#FFFFF",
         "path":"/Home"
     },
+
     {
         "title": "Inventory",
         "icon": "bi-inboxes-fill",
+        "color":"#FFFFF",
         "path":"/Inventory"
     },
+
     {
         "title": "Return Product",
         "icon": "bi-person-fill",
@@ -18,46 +22,136 @@
                 "path": "/profile"
             },
             {
-                "title": "Settings",
-                "childrens": [
-                    {
-                        "title": "Account",
-                        "path": "/settings/account"
-                    },
-                    {
-                        "title": "Notifications",
-                        "path": "/settings/notifications"
-                    }
-                ]
-            },
-            {
                 "title": "Logout",
                 "path": "/logout"
             }
         ]
     },
+
     {
-        "title": "Return Product",
-        "icon": "bi-view-list",
+        "title": "Product Listing",
+        "icon": "bi-list-check",
+        "color":"#FFFFF",
         "childrens": [
             {
-                "title": "Search",
-                "path": "/search"
+                "title": "My listing",
+                "path": "/search",
+                "color":"#FFFFF"
             },
             {
-                "title": "History",
-                "path": "/history"   
+                "title": "Add New Listing",
+                "path": "/history",
+                "color":"#FFFFF"   
+            },
+            {
+                "title": "Track Approval Requests",
+                "path": "/history",
+                "color":"#FFFFF"  
+            }
+        ]
+    },
+
+    {
+        "title": "Orders",
+        "icon": "bi-box-seam-fill",
+        "color":"#FFFFF",
+        "childrens": [
+            {
+                "title": "My listing",
+                "path": "/search",
+                "color":"#FFFFF"
+            },
+            {
+                "title": "Add New Listing",
+                "path": "/history",
+                "color":"#FFFFF"   
+            },
+            {
+                "title": "Track Approval Requests",
+                "path": "/history",
+                "color":"#FFFFF"   
             }
         ]
     },
     {
-        "title": "Support",
-        "icon": "bi-question-circle-fill",
-        "path": "/support"
+        "title": "Payments",
+        "icon": "bi-credit-card-fill",
+        "color":"#FFFFF",
+        "childrens": [
+            {
+                "title": "My listing",
+                "path": "/search",
+                "color":"#FFFFF"
+            },
+            {
+                "title": "Add New Listing",
+                "path": "/history",
+                "color":"#FFFFF"   
+            },
+            {
+                "title": "Track Approval Requests",
+                "path": "/history" ,
+                "color":"#FFFFF" 
+            }
+        ]
     },
     {
-        "title": "Report Bug",
-        "icon": "bi-bug",
-        "path": "/report-bug"
+        "title": "Growth",
+        "icon": "bi-graph-up",
+        "color":"#FFFFF",
+        "childrens": [
+            {
+                "title": "My listing",
+                "path": "/search",
+                "color":"#FFFFF"
+            },
+            {
+                "title": "Add New Listing",
+                "path": "/history",  
+                "color":"#FFFFF" 
+            },
+            {
+                "title": "Track Approval Requests",
+                "path": "/history" ,
+                "color":"#FFFFF"  
+            }
+        ]
+    },
+    {
+        "title": "Price Recommendation",
+        "icon": "bi-currency-dollar",
+        "path": "/support",
+        "color":"#FFFFF",
+        "marginTop": "90px"
+    },
+    {
+        "title": "Promotions",
+        "icon": "bi-percent",
+        "path": "/report-bug",
+        "color":"#FFFFF"
+    },
+    {
+        "title": "Advertisement",
+        "icon": "bi-megaphone-fill",
+        "path": "/report-bug",
+        "color":"#FFFFF"
+    },
+    {
+        "title": "Settings",
+        "icon": "bi-gear-fill",
+        "path": "/report-bug",
+        "color":"#FFFFF"
+    },
+    {
+        "title": "Help & Support",
+        "icon": "bi-headset",
+        "path": "/report-bug",
+        "color": "#FFFFF"
+    },
+    {
+        "title": "Log Out",
+        "icon": "bi-box-arrow-right",
+        "path": "/report-bug",
+        "color": "#FF7272"
     }
 ]

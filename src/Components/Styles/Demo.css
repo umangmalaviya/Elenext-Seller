@@ -116,7 +116,7 @@ body {
 
 
 .sidebar-item {
-    padding: .75em 1em;
+    padding: 10px 15px;
     display: block;
     transition: background-color .15s;
     border-radius: 5px;
@@ -169,7 +169,6 @@ body {
     display: inline-block;
 }
 
-/* .item-title,
-.sidebar-item.plain {
-    font-size: 12px;
+/* .item-title {
+    font-size: 16px;
 } */

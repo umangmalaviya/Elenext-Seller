@@ -5,16 +5,18 @@ import { useState } from "react"
 
 export default function SidebarItem({ item }) {
     const [open, setOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(true);
 
+    
 
     if (item.childrens) {
         return (
             <div className={open ? "sidebar-item open" : "sidebar-item"}>
-                <div className="sidebar-title">
+                <div className="sidebar-title" style={{ color: item.color }}>
                     <span>
                         {item.icon && <i className={item.icon}></i>}
                     </span>
-                    <span className="item-title">
+                    <span className="item-title" style={{ fontSize: isOpen ? "15px" : "4px" }}>
                         {item.title}
                     </span>
                     <i className="bi-chevron-down toggle-btn" onClick={() => setOpen(!open)}></i>
@@ -26,9 +28,9 @@ export default function SidebarItem({ item }) {
         )
     } else {
         return (
-            <a href={item.path || "#"} className="sidebar-item sidebar-title plain">
+            <a href={item.path || "#"} className="sidebar-item sidebar-title plain" style={{ color: item.color }}>
                 {item.icon && <i className={item.icon}></i>}
-                <span className="item-title">
+                <span className="item-title" style={{ fontSize: isOpen ? "15px" : "4px" }}>
                     {item.title}
                 </span>
             </a>
