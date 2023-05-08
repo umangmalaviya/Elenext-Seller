@@ -1,102 +1,113 @@
 import React, { useState } from "react";
-import { Navbar, Nav, NavDropdown } from "react-bootstrap";
-import { LinkContainer } from "react-router-bootstrap";
+import {
+    FaTh,
+    FaBars,
+    FaUserAlt,
+    FaRegChartBar,
+    FaCommentAlt,
+    FaShoppingBag,
+    FaThList,
+} from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-import { MdInventory, MdSettings } from "react-icons/md";
-import "../Styles/Home.css"
-import logo from "../Images/new-seller-logo.svg"
+import "../Styles/Demo.css";
+import logo from "../Images/seller-logo.svg";
+import { RiInboxArchiveFill } from "react-icons/ri";
+import { CiDiscount1 } from "react-icons/ci";
+import { TbSpeakerphone, TbLogout } from "react-icons/tb";
+import { TfiHeadphoneAlt } from "react-icons/tfi";
 import { FaHome, FaPercentage } from "react-icons/fa";
 import { RiCustomerServiceFill } from "react-icons/ri";
 import { HiCurrencyDollar, HiSpeakerphone } from "react-icons/hi";
-import { TbLogout } from "react-icons/tb";
 
-const Sidebar = () => {
+const Demo = () => {
+    const [isOpen, setIsOpen] = useState(true);
+    const toggle = () => setIsOpen(!isOpen);
+    const modal = document.getElementById('modal');
 
-    const [expanded, setExpanded] = useState(false);
+    const mediaQuery = window.matchMedia('(max-width: 1201px)');
+    mediaQuery.addListener(handleMediaQueryChange);
 
-    const handleToggle = () => {
-        setExpanded(!expanded);
-    };
+    const mediaQuery1 = window.matchMedia('(min-width: 1200px)');
+    mediaQuery1.addListener(handleMediaQueryChange1);
 
+    function handleMediaQueryChange1(event) {
+        if (event.matches) {
+            // Close the modal when the media query matches
+            setIsOpen()
+        }
+        else{
+            setIsOpen(false)
+        }
+    }
+    function handleMediaQueryChange(event) {
+        if (event.matches) {
+            // Close the modal when the media query matches
+            setIsOpen(false)
+        }
+    }
+
+    const menuItem = [
+        {
+            path: "/Home",
+            name: "Home",
+            icon: <FaHome />,
+        },
+        {
+            path: "/Inventory",
+            name: "Inventory",
+            icon: <RiInboxArchiveFill />,
+        },
+        {
+            path: "/analytics",
+            name: "Analytics",
+            icon: <FaRegChartBar />,
+        },
+        {
+            path: "/comment",
+            name: "Comment",
+            icon: <FaCommentAlt />,
+        },
+        {
+            path: "/product",
+            name: "Product",
+            icon: <FaShoppingBag />,
+        },
+        {
+            path: "/productList",
+            name: "Product List",
+            icon: <FaThList />,
+        },
+    ];
     return (
         <>
-            <Navbar bg="light" expand="lg" expanded={expanded} className="sidenavbar">
-                <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleToggle} />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="flex-column">
-                        <img src={logo} alt="logo" className="logo" />
-                        <div className="upside-navbar">
-                            <LinkContainer to="/Home" exact="true">
-                                <Nav.Link as={NavLink} to="/Home" exact="true" ativeclassname="active">
-                                    <FaHome className="mr-2" size='25px' /> Home
-                                </Nav.Link>
-                            </LinkContainer>
-
-                            <LinkContainer to="/Inventory" exact="true">
-                                <Nav.Link as={NavLink} to="/Inventory" exact="true" ativeclassname="active">
-                                    <MdInventory className="mr-2" size='25px' /> Inventory
-                                </Nav.Link>
-                            </LinkContainer>
+            <div style={{ width: isOpen ? "300px" : "50px" }} className="sidebar123">
+                <div className="top_section123">
+                    <h1 style={{ display: isOpen ? "block" : "none" }} className="logo123">
+                        <img src={logo} alt="" />
+                    </h1>
+                    <div style={{ marginLeft: isOpen ? "50px" : "0px" }} className="bars123">
+                        <FaBars onClick={toggle} />
+                    </div>
+                </div>
+                {menuItem.map((item, index) => (
+                    <NavLink
+                        to={item.path}
+                        key={index}
+                        className="link123"
+                        activeclassName="active"
+                    >
+                        <div className="icon123">{item.icon}</div>
+                        <div
+                            style={{ display: isOpen ? "block" : "none" }}
+                            className="link_text123"
+                        >
+                            {item.name}
                         </div>
-
-                        {/* <LinkContainer to="/Demo" exact='true'>
-                                <Nav.Link as={NavLink} to="/Demo" exact="true" ativeclassname="active">
-                                    <RiInboxArchiveFill className="mr-2" size='25px' />
-                                    <NavDropdown title="Return Product" id="basic-nav-dropdown">
-                                        <NavDropdown.Item as={NavLink} to="/Demo" ativeclassname="active" exact='true'>
-                                            <RiInboxArchiveFill className="mr-2" size='25px' />
-                                            Abc
-                                        </NavDropdown.Item>
-                                        <NavDropdown.Item as={NavLink} to="/Demo" ativeclassname="active">
-                                            <RiInboxArchiveFill className="mr-2" size='25px' />
-                                            DEF
-                                        </NavDropdown.Item>
-                                    </NavDropdown>
-                                </Nav.Link>
-                            </LinkContainer> */}
-
-                        <div className="downside-navbar">
-                            <LinkContainer to="/Price" exact="true">
-                                <Nav.Link as={NavLink} to="/Price" exact="true" ativeclassname="active">
-                                    <HiCurrencyDollar className="mr-2" size='25px' /> Price Recommendation
-                                </Nav.Link>
-                            </LinkContainer>
-
-                            <LinkContainer to="/Promotions" exact="true">
-                                <Nav.Link as={NavLink} to="/Promotions" exact="true" ativeclassname="active">
-                                    <FaPercentage className="mr-2" size='25px' /> Promotions
-                                </Nav.Link>
-                            </LinkContainer>
-
-                            <LinkContainer to="/Advertisement" exact="true">
-                                <Nav.Link as={NavLink} to="/Advertisement" exact="true" ativeclassname="active">
-                                    <HiSpeakerphone className="mr-2" size='25px' /> Advertisement
-                                </Nav.Link>
-                            </LinkContainer>
-
-                            <LinkContainer to="/Settings" exact="true">
-                                <Nav.Link as={NavLink} to="/Settings" exact="true" ativeclassname="active">
-                                    <MdSettings className="mr-2" size='25px' /> Settings
-                                </Nav.Link>
-                            </LinkContainer>
-
-                            <LinkContainer to="/Help" exact="true">
-                                <Nav.Link as={NavLink} to="/Help" exact="true" ativeclassname="active">
-                                    <RiCustomerServiceFill className="mr-2" size='25px' /> Help & Support
-                                </Nav.Link>
-                            </LinkContainer>
-
-                            <LinkContainer to="/LogOut" exact="true" className="red">
-                                <Nav.Link as={NavLink} to="/LogOut" exact="true" ativeclassname="active" >
-                                    <TbLogout className="mr-2" size='25px' /> Log Out
-                                </Nav.Link>
-                            </LinkContainer>
-                        </div>
-                    </Nav>
-                </Navbar.Collapse>
-            </Navbar>
+                    </NavLink>
+                ))}
+            </div>
         </>
-    )
-}
+    );
+};
 
-export default Sidebar
+export default Demo;

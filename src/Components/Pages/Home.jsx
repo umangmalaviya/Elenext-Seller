@@ -1,12 +1,6 @@
 import React, { useState } from "react";
-import { Navbar, Nav, NavDropdown } from "react-bootstrap";
-import { LinkContainer } from "react-router-bootstrap";
-import { NavLink } from "react-router-dom";
-import { FaHome, FaSignOutAlt } from "react-icons/fa";
-import { MdInventory } from "react-icons/md";
 import Sidebar from "../Pages/Sidebar"
 import "../Styles/Home.css"
-import logo from "../Images/new-seller-logo.svg"
 import Chart from "react-apexcharts";
 import calender from "../Images/calender.svg"
 import s1 from "../Images/s1.svg"
@@ -16,13 +10,8 @@ import big_sale from "../Images/big_sale.svg"
 import SellerNavabar from "./SellerNavabar";
 
 const Home = () => {
-    const [expanded, setExpanded] = useState(false);
 
-    const handleToggle = () => {
-        setExpanded(!expanded);
-    };
-
-    const [state, setState] = useState({
+    const [state] = useState({
         options: {
             colors: ["#00BA00", "#FF9800"],
             chart: {
@@ -56,71 +45,73 @@ const Home = () => {
                                 />
                             </div>
                             <div className="right-miidle-sidebar-inner">
-                                <div className="up-corner">
-                                    <div className="new-order">
-                                        <div className="qwedsa">
-                                            <img src={require("../Images/green-pipe.png")} alt=" " />
-                                            <div className="new-order-name">
-                                                <p>New Orders</p>
-                                                <span>2520.22</span>
+                                <div className="bundle">
+                                    <div className="up-corner">
+                                        <div className="new-order">
+                                            <div className="qwedsa">
+                                                <img src={require("../Images/green-pipe.png")} alt=" " />
+                                                <div className="new-order-name">
+                                                    <p>New Orders</p>
+                                                    <span>2520.22</span>
+                                                </div>
+                                                <div className="new-order-icon">
+                                                    <img src={require("../Images/new-order.png")} alt=" " />
+                                                </div>
                                             </div>
-                                            <div className="new-order-icon">
-                                                <img src={require("../Images/new-order.png")} alt=" " />
-                                            </div>
-                                        </div>
-                                        <div className="plus">
-                                            <span>↑+6.5%</span>
-                                            <p>Since last week</p>
-                                        </div>
-                                    </div>
-                                    <div className="new-order">
-                                        <div className="qwedsa">
-                                            <img src={require("../Images/red-pipe.png")} alt=" " />
-                                            <div className="new-order-name">
-                                                <p>Active Listings</p>
-                                                <span>25</span>
-                                            </div>
-                                            <div className="new-order-icon1">
-                                                <img src={require("../Images/active-listing.png")} alt=" " />
+                                            <div className="plus">
+                                                <span>↑+6.5%</span>
+                                                <p>Since last week</p>
                                             </div>
                                         </div>
-                                        <div className="plus1">
-                                            <span>&darr;</span><span>+6.5%</span>
-                                            <p>Since last week</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="down-corner">
-                                    <div className="new-order">
-                                        <div className="qwedsa">
-                                            <img src={require("../Images/green-pipe.png")} alt=" " />
-                                            <div className="new-order-name">
-                                                <p>Units Sold</p>
-                                                <span>02</span>
+                                        <div className="new-order">
+                                            <div className="qwedsa">
+                                                <img src={require("../Images/red-pipe.png")} alt=" " />
+                                                <div className="new-order-name">
+                                                    <p>Active Listings</p>
+                                                    <span>25</span>
+                                                </div>
+                                                <div className="new-order-icon1">
+                                                    <img src={require("../Images/active-listing.png")} alt=" " />
+                                                </div>
                                             </div>
-                                            <div className="new-order-icon">
-                                                <img src={require("../Images/units-sold.png")} alt=" " />
+                                            <div className="plus1">
+                                                <span>&darr;</span><span>+6.5%</span>
+                                                <p>Since last week</p>
                                             </div>
-                                        </div>
-                                        <div className="plus">
-                                            <span>↑+7.5%</span>
-                                            <p>Since last week</p>
                                         </div>
                                     </div>
-                                    <div className="new-order">
-                                        <div className="qwedsa">
-                                            <img src={require("../Images/green-pipe.png")} alt=" " />
-                                            <div className="new-order-name">
-                                                <p>Sales</p>
-                                                <span>11,555</span>
+                                    <div className="down-corner">
+                                        <div className="new-order">
+                                            <div className="qwedsa">
+                                                <img src={require("../Images/green-pipe.png")} alt=" " />
+                                                <div className="new-order-name">
+                                                    <p>Units Sold</p>
+                                                    <span>02</span>
+                                                </div>
+                                                <div className="new-order-icon">
+                                                    <img src={require("../Images/units-sold.png")} alt=" " />
+                                                </div>
                                             </div>
-                                            <div className="new-order-icon">
-                                                <img src={require("../Images/sales.png")} alt=" " />
+                                            <div className="plus">
+                                                <span>↑+7.5%</span>
+                                                <p>Since last week</p>
                                             </div>
                                         </div>
-                                        <div className="plus">
-                                            <span>↑+10.5%</span>
-                                            <p>Since last week</p>
+                                        <div className="new-order">
+                                            <div className="qwedsa">
+                                                <img src={require("../Images/green-pipe.png")} alt=" " />
+                                                <div className="new-order-name">
+                                                    <p>Sales</p>
+                                                    <span>11,555</span>
+                                                </div>
+                                                <div className="new-order-icon">
+                                                    <img src={require("../Images/sales.png")} alt=" " />
+                                                </div>
+                                            </div>
+                                            <div className="plus">
+                                                <span>↑+10.5%</span>
+                                                <p>Since last week</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
