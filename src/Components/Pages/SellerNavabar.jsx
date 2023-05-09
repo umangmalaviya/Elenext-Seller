@@ -11,7 +11,7 @@ const SellerNavabar = () => {
                 <div className="right-sidenavbar-head">
                     <i className="fa-solid fa-comment" style={{ color: '#ffffff' }}></i>
                     <i className="fa-solid fa-bell"></i>
-                    <img src={require("../Images/profile.png")} alt=" " />
+                    <img src={require("../Images/profile.png")} alt=" " style={{cursor: 'pointer'}}/>
                 </div>
             </div>
             <hr />

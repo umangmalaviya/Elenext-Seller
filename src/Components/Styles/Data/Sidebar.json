@@ -2,8 +2,9 @@
     {
         "title": "Home",
         "icon": "bi-house-fill",
-        "color":"#FFFFF",
-        "path":"/Home"
+        "color":"#FF7272",
+        "path":"/Home",
+        "imageURL": "../../Images/eye.png"
     },
 
     {

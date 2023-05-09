@@ -75,13 +75,13 @@ export default function Sidebar() {
     }
 
     return (
-        <div style={{ width: isOpen ? "300px" : "50px" }} className="sidebar123">
+        <div style={{ transform: isOpen ? "translate3d(0,0,0)" : "translate3d(-100%,0,0)" }} className={isOpen ? "sidebar123" : "non-open"}>
             <div className="top_section123">
                 <h1 style={{ display: isOpen ? "block" : "none" }} className="logo123">
                     <img src={logo} alt="" />
                 </h1>
-                <div style={{ marginLeft: isOpen ? "50px" : "0px" }} className="bars123">
-                    <FaBars onClick={toggle} />
+                <div style={{ marginLeft: isOpen ? "50px" : "120px" }} className="bars123">
+                    <FaBars onClick={toggle}/>
                 </div>
             </div>
             <div>

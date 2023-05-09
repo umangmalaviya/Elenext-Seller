@@ -24,6 +24,7 @@ import ReturnProduct from "./Components/Pages/ReturnProduct";
 import Settings from "./Components/Pages/Settings";
 import AddNewListing from "./Components/Pages/AddNewListing";
 import SearchProduct from "./Components/Pages/SearchProduct";
+import Dumy from "./Components/Pages/Dumy";
 
 
 function App() {
@@ -57,6 +58,7 @@ function App() {
           <Route path="/Settings" element={<Settings />} />
           <Route path="/addnewlisting" element={<AddNewListing />} />
           <Route path="/searchproduct" element={<SearchProduct/>} />  
+          <Route path="/Dumy" element={<Dumy/>} />  
         </Routes>
       </BrowserRouter>
     </>

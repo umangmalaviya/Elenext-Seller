@@ -91,14 +91,16 @@
     background-color: #000000;
     border-radius: 50%;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .fa-bell {
     padding: 10px;
-    background-color: #FFFFFF;
+    background-color: #000;
     border-radius: 50%;
     border: 1px solid;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .sidenavbar-head {
