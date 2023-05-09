@@ -154,3 +154,38 @@
     line-height: 30px;
     color: #000000;
 }
+
+.inventory_stock thead th {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.inventory_stock tbody td {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.inventory_main nav {
+    background: #F5F5F5;
+    border: 1px solid #000000;
+    border-top: none;
+    padding: 15px 30px;
+}
+
+.inventory_main nav .pagination .page-link {
+    background: transparent;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+}
+
+.inventory_main nav .pagination .page-item.active {
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
